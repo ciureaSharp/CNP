@@ -1,6 +1,6 @@
 <?php 
 	//1 89 04 06 03 527 9
-
+//comment
 	// rand gen
 	$sex = mt_rand(1,6);
 	$an = str_pad(mt_rand(00,99), 2, "0", STR_PAD_LEFT);
