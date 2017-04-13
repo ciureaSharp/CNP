@@ -11,7 +11,7 @@
 </head>
 	<body>
 
-		<form action="reverse_cnp.php" method="post">
+		<form action="randomcnp.php" method="post">
 			<input type="submit" class="btn btn-primary" value="Random" name="Random">
 		</form> 
 
