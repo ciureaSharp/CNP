@@ -75,4 +75,4 @@ if ($check_rezult < 10) {
 }
 
 $cnp = $cnp_neverificat . $check;//magie!
-var_dump($cnp);
+echo $cnp;
