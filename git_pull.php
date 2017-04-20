@@ -6,7 +6,7 @@
  * Time: 20:40
  */
 
-//if ($_POST['payload']) {
+if ($_POST['payload']) {
     exec('git pull -u origin master 2>&1', $output);
     print_r($output);
-//}
+}
