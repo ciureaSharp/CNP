@@ -9,3 +9,4 @@
 
 exec('git pull -u origin master 2>&1', $output);
 print_r($output);
+var_dump($_POST);
