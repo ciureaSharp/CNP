@@ -11,9 +11,23 @@
 </head>
 	<body>
 
-		<form action="randomcnp.php" method="post">
-			<input type="submit" class="btn btn-primary" value="Random" name="Random">
-		</form> 
+        <button type="button" id="btn">Click Me!</button>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script>
+
+            $('#btn').click(function (e) {
+                e.preventDefault();
+                var payload = 'payload';
+                $.post('#', {
+                    payload: payload
+                }, function (data) {
+                    alert(data);
+                });
+            });
+        </script>
 
 	</body>
 </html>
