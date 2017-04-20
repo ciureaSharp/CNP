@@ -18,9 +18,3 @@
 	</body>
 </html>
 
-<?php
-
-echo "bagizaz";
-
-// ggg
-?>
