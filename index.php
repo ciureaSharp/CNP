@@ -22,5 +22,5 @@
 
 echo "bagizaz";
 
-//smth
+
 ?>
