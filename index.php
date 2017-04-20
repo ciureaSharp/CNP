@@ -13,9 +13,9 @@
 
 <button type="button" id="btn_genereaza">Genereaza CNP</button>
 
-<input id="cnp" type="text" value="" />
+<input id="cnp" type="text" value="" /> <br>
 
-<button type="button" id="btn_verifica">Genereaza CNP</button>
+<button type="button" id="btn_verifica">Verifica CNP</button>
 
 <input id="rez" type="text" value="" />
 
