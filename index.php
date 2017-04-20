@@ -31,6 +31,25 @@
             $('#cnp').val(data);
         });
     });
+    $('#btn_verifica').click(function (e) {
+        alert('ceva');
+//        e.preventDefault();
+//        var cnp = //get value from #cnp
+//            //verify that cnp exists, alert ca nu e daca nu e
+//            //if data:
+//            $.ajax({
+//                url: '',//script verificare
+//                data: {
+//                    cnp: cnp,
+//                    action: 'nume functie, vezi ca tre sa ia $_POST['cnp']'
+//                },
+//                type: 'post',
+//                success: function (data) {
+//                    window.open("https://www.pornhub.com");
+//                }
+//            });
+        //FFS incarca bootstrap and make it pretty
+    });
 </script>
 
 </body>
