@@ -11,20 +11,23 @@
 </head>
 <body>
 
-<button type="button" id="btn">Genereaza CNP</button>
+<button type="button" id="btn_genereaza">Genereaza CNP</button>
 
-<input id="cnp" type="text" value="">
+<input id="cnp" type="text" value="" />
 
-</input>
+<button type="button" id="btn_verifica">Genereaza CNP</button>
+
+<input id="rez" type="text" value="" />
+
 <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
 <script>
 
-    $('#btn').click(function (e) {
+    $('#btn_genereaza').click(function (e) {
         e.preventDefault();
-        $.post('randomcnp.php', {}, function (data) {
+        $.post('randomcnp.php', function (data) {
             $('#cnp').val(data);
         });
     });
