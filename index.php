@@ -49,6 +49,7 @@
 //                }
 //            });
         //FFS incarca bootstrap and make it pretty
+        //http://devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/index.php
     });
 </script>
 
