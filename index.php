@@ -20,9 +20,7 @@
 
             $('#btn').click(function (e) {
                 e.preventDefault();
-                var payload = 'payload';
-                $.post('#', {
-                    payload: payload
+                $.post('randomcnp.php', {
                 }, function (data) {
                     alert(data);
                 });
