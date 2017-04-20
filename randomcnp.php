@@ -6,7 +6,7 @@
  * Time: 21:19
  */
 
-//1841108430125
+//1841108430125rr
 $start_age = (integer)'-5364668664'; //unix timextamp pt. 1800-01-01
 $fin_age = strtotime('now'); // unix timestamp pt acum
 $unix_date = mt_rand($start_age, $fin_age); // random intre anterioarele
