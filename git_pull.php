@@ -9,4 +9,3 @@
 
 exec('git pull -u origin master 2>&1', $output);
 print_r($output);
-//-u este FOARTE important
