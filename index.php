@@ -32,7 +32,7 @@
         });
     });
     $('#btn_verifica').click(function (e) {
-        alert('ceva');
+        alert('altceva');
 //        e.preventDefault();
 //        var cnp = //get value from #cnp
 //            //verify that cnp exists, alert ca nu e daca nu e
