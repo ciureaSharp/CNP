@@ -154,7 +154,7 @@ function validare($cnp)
 
     $cnp_array = array();
 
-    for ($i = 0; $i <= 11;                   $i++) {
+    for ($i = 0; $i <= 11; $i++) {
         $cnp_array[$i] = $key[$i] * $cnp[$i];
     }
     $check = array_sum($cnp_array) % 11;
