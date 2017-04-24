@@ -6,7 +6,7 @@
  * Time: 21:19
  */
 
-//1841108430125rr
+//1841108430125
 $start_age = (integer)'-5364668664'; //unix timextamp pt. 1800-01-01
 $fin_age = strtotime('now'); // unix timestamp pt acum
 $unix_date = mt_rand($start_age, $fin_age); // random intre anterioarele
@@ -74,5 +74,5 @@ if ($check_rezult < 10) {
     $check = 1;
 }
 
-$cnp = $cnp_neverificat . $check;//magie!
+$cnp = $cnp_neverificat . $check; //magie!
 echo $cnp;
