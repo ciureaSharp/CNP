@@ -16,7 +16,7 @@
         <input id="cnp" class="form-control" type="text" value="">
     </div>
 
-    <div>
+    <div class="form-group">
         <button type="button" class="btn btn-success btn-sm" id="btn_verifica">Verifica CNP</button>
             <input id="rez" class="form-control" type="text" value="" />
     </div>
