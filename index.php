@@ -37,10 +37,7 @@
         });
     });
     $('#btn_verifica').click(function (e) {
-        e.preventDefault();
-        $.post('validatecnp.php', function (data) {
-            $('#rez').val(data);
-        });
+        alert('altceva');
 //        e.preventDefault();
 //        var cnp = //get value from #cnp
 //            //verify that cnp exists, alert ca nu e daca nu e
