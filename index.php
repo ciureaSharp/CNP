@@ -11,11 +11,13 @@
 </head>
 <body>
 <form class="form-inline">
-    <button type="button"  class="btn btn-primary" id="btn_genereaza">Genereaza CNP</button>
-    <input id="cnp" class="form-control" type="text" value="" /> <br>
+    <div class="form-group">
+        <button type="button"  class="btn btn-primary btn-sm" id="btn_genereaza">Genereaza CNP</button>
+            <input id="cnp" class="form-control" type="text" value="" /> <br>
 
-    <button type="button" class="btn btn-success" id="btn_verifica">Verifica CNP</button>
-    <input id="rez" class="form-control" type="text" value="" />
+        <button type="button" class="btn btn-success btn-sm" id="btn_verifica">Verifica CNP</button>
+            <input id="rez" class="form-control" type="text" value="" />
+    </div>
 </form>
 
 
