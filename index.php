@@ -12,6 +12,7 @@
 <body>
 
 <button type="button" id="btn_genereaza">Genereaza CNP</button>
+<button type="button" class="btn btn-primary">Primary</button>
 
 <input id="cnp" type="text" value="" /> <br>
 

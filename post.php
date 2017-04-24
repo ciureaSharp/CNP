@@ -8,10 +8,7 @@
 
 ?>
 <button type="button" id="btn">Click Me!</button>
-<!--<form>-->
-<!--    <input type="file" autocomplete="off" class="" id="q"-->
-<!--           name="qw">-->
-<!--</form>-->
+
 <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
