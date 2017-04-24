@@ -13,10 +13,10 @@
 <form class="form-inline">
     <div class="form-group">
         <button type="button"  class="btn btn-primary btn-sm" id="btn_genereaza">Genereaza CNP</button>
-            <input id="cnp" class="form-control" type="text" value="" /> <br>
+            <input id="cnp" class="form-control col-md-7" type="text" value="" /> <br>
 
         <button type="button" class="btn btn-success btn-sm" id="btn_verifica">Verifica CNP</button>
-            <input id="rez" class="form-control" type="text" value="" />
+            <input id="rez" class="form-control col-md-7" type="text" value="" />
     </div>
 </form>
 
