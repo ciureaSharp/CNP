@@ -54,7 +54,7 @@ $jud = array(
     '45' => 'București S.5', '46' => 'București S.6',
     '51' => 'Călărași', '52' => 'Giurgiu');
 
-$judet = array_rand($jud);//luam un cod de judet random
+$judet = array_rand($jud); //luam un cod de judet random
 $nnn = str_pad(mt_rand(001, 999), 3, '0', STR_PAD_LEFT); //whatever, go to wiki
 $cnp_neverificat = $sex_data . $judet . $nnn; //concatenam smecheriile
 
