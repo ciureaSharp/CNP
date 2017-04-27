@@ -40,8 +40,9 @@
         e.preventDefault();
         var cnp = $('#cnp').val();
         alert (cnp);
-//        e.preventDefault();
-//        var cnp = //get value from #cnp
+            if($('#cnp').val("")){
+                alert ('CNP nu exista. Apasa "Genereaza cnp".');
+            }
 //            //verify that cnp exists, alert ca nu e daca nu e
 //            //if data:
 //            $.ajax({
