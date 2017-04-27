@@ -40,6 +40,7 @@
         e.preventDefault();
         var cnp = $('#cnp').val(data);
         alert (cnp);
+//        e.preventDefault();
 //        var cnp = //get value from #cnp
 //            //verify that cnp exists, alert ca nu e daca nu e
 //            //if data:
@@ -47,7 +48,7 @@
 //                url: '',//script verificare
 //                data: {
 //                    cnp: cnp,
-//                    action: 'nume functie, vezi ca tre sa ia $_POST['cnp']
+//                    action: 'nume functie, vezi ca tre sa ia $_POST['cnp']'
 //                },
 //                type: 'post',
 //                success: function (data) {
