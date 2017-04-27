@@ -13,7 +13,7 @@
 <form class="form-inline">
     <div class="form-group">
         <button type="button"  class="btn btn-primary btn-sm" id="btn_genereaza">Genereaza CNP</button>
-        <input id="cnp" class="form-control" type="text" value="">
+        <input id="cnp" class="form-control" type="text" value="" name="cnp">
     </div>
 
     <div class="form-group">
@@ -39,7 +39,6 @@
     $('#btn_verifica').click(function (e) {
         e.preventDefault();
         var cnp = $('#cnp').val();
-      //  alert (cnp);
             if(cnp == "") {
                 alert('CNP nu exista. Apasa "Genereaza cnp".');
             } else {
