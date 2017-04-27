@@ -43,7 +43,7 @@
             if(cnp == "") {
                 alert('CNP nu exista. Apasa "Genereaza cnp".');
             } else {
-                alert ('OK');
+                alert (cnp);
             }
 
 
