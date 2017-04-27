@@ -38,7 +38,7 @@
     });
     $('#btn_verifica').click(function (e) {
         e.preventDefault();
-        var cnp = $('#cnp').val(data);
+        var cnp = $('#cnp').val();
         alert (cnp);
 //        e.preventDefault();
 //        var cnp = //get value from #cnp
