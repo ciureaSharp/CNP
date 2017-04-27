@@ -40,8 +40,11 @@
         e.preventDefault();
         var cnp = $('#cnp').val();
       //  alert (cnp);
-            if($('#cnp').val() == "") {
+            if(cnp == "") {
                 alert('CNP nu exista. Apasa "Genereaza cnp".');
+            } else {
+                alert ('OK');
+            }
 
 
 
