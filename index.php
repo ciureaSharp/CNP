@@ -39,7 +39,7 @@
     $('#btn_verifica').click(function (e) {
         e.preventDefault();
         var cnp = $('#cnp').val();
-        alert (cnp);
+      //  alert (cnp);
             if($('#cnp').val("")){
                 alert ('CNP nu exista. Apasa "Genereaza cnp".');
             }
