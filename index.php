@@ -40,12 +40,12 @@
         e.preventDefault();
         var cnp = $('#cnp').val();
       //  alert (cnp);
-            if($('#cnp').val("")) {
+            if($('#cnp').val() == "") {
                 alert('CNP nu exista. Apasa "Genereaza cnp".');
-            } else {
-                alert ('OK');
-            }
-//            //verify that cnp exists, alert ca nu e daca nu e
+
+
+
+//
 //            //if data:
 //            $.ajax({
 //                url: '',//script verificare
