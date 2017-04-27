@@ -18,7 +18,7 @@
 
     <div class="form-group">
         <button type="button" class="btn btn-success btn-sm" id="btn_verifica">Verifica CNP</button>
-            <input id="rez" class="form-control" type="text" value="" />
+        <input id="rez" class="form-control" type="text" value="" />
     </div>
 </form>
 
@@ -37,8 +37,9 @@
         });
     });
     $('#btn_verifica').click(function (e) {
-        alert('altceva');
-//        e.preventDefault();
+        e.preventDefault();
+        var cnp = $('#cnp').val(data);
+        alert (cnp);
 //        var cnp = //get value from #cnp
 //            //verify that cnp exists, alert ca nu e daca nu e
 //            //if data:
@@ -46,7 +47,7 @@
 //                url: '',//script verificare
 //                data: {
 //                    cnp: cnp,
-//                    action: 'nume functie, vezi ca tre sa ia $_POST['cnp']'
+//                    action: 'nume functie, vezi ca tre sa ia $_POST['cnp']
 //                },
 //                type: 'post',
 //                success: function (data) {
