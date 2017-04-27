@@ -1,3 +1,7 @@
+<?php
+include ('validatecnp.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,13 +47,27 @@
                 alert('CNP nu exista. Apasa "Genereaza cnp".');
             } else {
                 $ajax({
-                    type: 'POST',
+                    type: 'post',
                     url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
-                    success: function (data) {
-                        window.open("https://www.youtube.com")
-                    }
                 });
             }
+
+
+
+//
+//            //if data:
+//            $.ajax({
+//                url: '',//script verificare
+//                data: {
+//                    cnp: cnp,
+//                    action: 'nume functie, vezi ca tre sa ia $_POST['cnp']'
+//                },
+//                type: 'post',
+//                success: function (data) {
+//                    window.open("https://www.pornhub.com");
+//                }
+//            });
+        //FFS incarca bootstrap and make it pretty
         //http://devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/index.php
     });
 </script>
