@@ -44,12 +44,13 @@ ini_set('max_execution_time', 300);
     $('#btn_verifica').click(function (e) {
         e.preventDefault();
         var cnp = $('#cnp').val();
+        alert(cnp);
         $('#rez').val(cnp);
         //  alert(cnp);
         if (cnp == "") {
             alert('CNP nu exista. Apasa "Genereaza cnp".');
         } else {
-            $ajax({
+            $.ajax({
                 type: 'post',
                 url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
             });
