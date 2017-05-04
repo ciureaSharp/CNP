@@ -49,17 +49,17 @@ ini_set('max_execution_time', 300);
         if (cnp == "") {
             alert('CNP nu exista. Apasa "Genereaza cnp".');
         } else {
-            $.ajax({
-                url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
-                data: {
-                    cnp: cnp,
-                    action: 'nume functie, vezi ca tre sa ia $_POST['cnp']'
-                },
-                type: 'post',
-                success: function (data) {
-                    alert(data);
-                }
-            });
+//            $.ajax({
+//                url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+//                data: {
+//                    cnp: cnp,
+//                    action: 'nume functie, vezi ca tre sa ia $_POST['cnp']'
+//                },
+//                type: 'post',
+//                success: function (data) {
+//                    alert(data);
+//                }
+//            });
         }
 
 
