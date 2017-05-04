@@ -44,7 +44,6 @@ ini_set('max_execution_time', 300);
     $('#btn_verifica').click(function (e) {
         e.preventDefault();
         var cnp = $('#cnp').val();
-        alert(cnp);
         $('#rez').val(cnp);
         //  alert(cnp);
         if (cnp == "") {
