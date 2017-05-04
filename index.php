@@ -18,16 +18,15 @@ ini_set('max_execution_time', 300);
 <body>
 <form class="form-inline">
     <div class="form-group">
-        <button type="button"  class="btn btn-primary btn-sm" id="btn_genereaza">Genereaza CNP</button>
+        <button type="button" class="btn btn-primary btn-sm" id="btn_genereaza">Genereaza CNP</button>
         <input id="cnp" class="form-control" type="text" value="" name="cnp">
     </div>
 
     <div class="form-group">
         <button type="button" class="btn btn-success btn-sm" id="btn_verifica">Verifica CNP</button>
-        <input id="rez" class="form-control" type="text" value="" />
+        <input id="rez" class="form-control" type="text" value=""/>
     </div>
 </form>
-
 
 
 <script
@@ -46,16 +45,15 @@ ini_set('max_execution_time', 300);
         e.preventDefault();
         var cnp = $('#cnp').val();
         $('#rez').val(cnp);
-      //  alert(cnp);
-//            if(cnp == "") {
-//                alert('CNP nu exista. Apasa "Genereaza cnp".');
-//            } else {
-//                $ajax({
-//                    type: 'post',
-//                    url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
-//                });
-//            }
-
+        //  alert(cnp);
+        if (cnp == "") {
+            alert('CNP nu exista. Apasa "Genereaza cnp".');
+        } else {
+            $ajax({
+                type: 'post',
+                url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+            });
+        }
 
 
 //
