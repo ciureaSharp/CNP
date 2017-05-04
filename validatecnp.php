@@ -5,9 +5,6 @@
  * Date: 4/24/2017
  * Time: 18:35
  */
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 //include ('index.php');
 
 function get_cnp_info()
@@ -81,7 +78,7 @@ function get_cnp_info()
         return "CNP invalid";
     }
 
-    setlocale(LC_ALL, 'ro_RO');
+    setlocale(LC_TIME, 'ro_RO');
     $data_nasterii = date('Y-F-d', strtotime($data_nasterii));
 
     $date1 = date_create(date('Y-m-d', time()));
