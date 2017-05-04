@@ -5,7 +5,7 @@
  * Date: 4/24/2017
  * Time: 18:35
  */
-include ('index.php');
+//include ('index.php');
 
 function get_cnp_info()
 {
@@ -27,13 +27,11 @@ function get_cnp_info()
     // dimensiunea cnp ului
     if (strlen($cnp) != 13) {
         return 'CNP trebuie sa aiba 13 caractere';
-        exit;
     }
 
     // caracterele sunt cifre
     if (!is_numeric($cnp)) {
         return 'CNP trebuie sa contina numai cifre';
-        exit;
     }
 
     // definesc genul prin metoda needle-haystack
