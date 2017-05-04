@@ -58,7 +58,7 @@ ini_set('max_execution_time', 300);
                 type: 'post',
                 success: function (data) {
                     data = $.parseJSON(data);
-                    alert(data);
+                    alert(data[value][0]);
                 }
             });
         }
