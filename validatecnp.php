@@ -7,12 +7,12 @@
  */
 //include ('index.php');
 
-function get_cnp_info()
+function get_cnp_info($cnp)
 {
 
-    if (isset($_POST['cnp']) && !empty($_POST['cnp'])) {
-        $cnp = $_POST['cnp'];
-    }
+//    if (isset($_POST['cnp']) && !empty($_POST['cnp'])) {
+//        $cnp = $_POST['cnp'];
+//    }
 
     $sex = substr($cnp, 0, 1);
     $an = substr($cnp, 1, 2);
@@ -155,7 +155,7 @@ function validare($cnp)
     }
 }
 
-echo json_encode(get_cnp_info());
+echo json_encode(get_cnp_info($_POST['cnp']));
 
 
 
