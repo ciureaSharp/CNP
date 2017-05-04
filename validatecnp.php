@@ -7,6 +7,27 @@
  */
 //include ('index.php');
 
+$conn = new mysqli('127.0.0.1', 'digitala_gabi', '133admin133!', 'digitala_dl_gabi');
+global $conn;
+
+function add_user_data()
+{
+    global $conn;
+    $sex = $_POST['sex'];
+    $data_nasterii = $_POST['data_nasterii'];
+    $varsta = $_POST['varsta'];
+    $locul_nasterii = $_POST['locul_nasterii'];
+    $cnp = $_POST['cnp'];
+
+    if ($stmt = $conn->prepare("INSERT INTO user_data(sex, data_nasterii, varsta, locul_nasterii, cnp) VALUES (?,?,?,?,?)")) {
+        $stmt->bind_param("ssdss", $sex, $data_nasterii, $varsta, $locul_nasterii, $cnp);
+        $stmt->execute();
+        echo $stmt->insert_id;
+    } else {
+        echo $stmt->error;
+    }
+}
+
 if (isset($_POST['action']) && !empty($_POST['action'])) {
     $function = $_POST['action'];
     return $function();
