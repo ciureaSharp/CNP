@@ -146,7 +146,6 @@ function validare($cnp)
     }
 }
 
-echo '<pre>';
 var_dump(get_cnp_info());
 
 
