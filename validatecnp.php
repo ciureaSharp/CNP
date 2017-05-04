@@ -149,9 +149,9 @@ function get_cnp_info()
 
     $ret = array(
         'sex' => $gen,
-        'data nasterii' => $data_nasterii,
+        'data_nasterii' => $data_nasterii,
         'varsta' => $varsta,
-        'locul nasterii' => $locul_nasterii
+        'locul_nasterii' => $locul_nasterii
     );
     echo json_encode($ret);
 
