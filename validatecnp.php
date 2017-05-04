@@ -5,6 +5,9 @@
  * Date: 4/24/2017
  * Time: 18:35
  */
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 //include ('index.php');
 
 function get_cnp_info()
