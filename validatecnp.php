@@ -75,7 +75,6 @@ function get_cnp_info()
     // validate date
     if (!checkdate($luna, $zi, $anfull) || !validare($cnp)) {
         return "CNP invalid";
-        exit;
     }
 
     setlocale(LC_TIME, 'ro_RO');
