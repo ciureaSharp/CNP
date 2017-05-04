@@ -7,12 +7,18 @@
  */
 //include ('index.php');
 
-function get_cnp_info($cnp)
+if (isset($_POST['action']) && !empty($_POST['action'])) {
+    $function = $_POST['action'];
+    return $function();
+}
+
+
+function get_cnp_info()
 {
 
-//    if (isset($_POST['cnp']) && !empty($_POST['cnp'])) {
-//        $cnp = $_POST['cnp'];
-//    }
+    if (isset($_POST['cnp']) && !empty($_POST['cnp'])) {
+        $cnp = $_POST['cnp'];
+    }
 
     $sex = substr($cnp, 0, 1);
     $an = substr($cnp, 1, 2);
@@ -120,13 +126,13 @@ function get_cnp_info($cnp)
         }
     }
 
-    return  array(
+    $ret = array(
         'sex' => $gen,
         'data nasterii' => $data_nasterii,
         'varsta' => $varsta,
         'locul nasterii' => $locul_nasterii
     );
-
+    echo json_encode($ret);
 
 }
 
@@ -155,7 +161,7 @@ function validare($cnp)
     }
 }
 
-echo json_encode(get_cnp_info($_POST['cnp']));
+
 
 
 
