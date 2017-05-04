@@ -120,14 +120,14 @@ function get_cnp_info()
         }
     }
 
-    $ret = array(
+    return  array(
         'sex' => $gen,
         'data nasterii' => $data_nasterii,
         'varsta' => $varsta,
         'locul nasterii' => $locul_nasterii
     );
 
-    echo json_encode($ret);
+
 }
 
 function validare($cnp)
@@ -155,7 +155,7 @@ function validare($cnp)
     }
 }
 
-var_dump(get_cnp_info());
+echo json_encode(get_cnp_info());
 
 
 
