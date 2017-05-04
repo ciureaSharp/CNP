@@ -155,7 +155,7 @@ function validare($cnp)
     }
 }
 
-//var_dump(get_cnp_info());
+var_dump(get_cnp_info());
 
 
 
