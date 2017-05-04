@@ -78,7 +78,7 @@ function get_cnp_info()
         return "CNP invalid";
     }
 
-    setlocale(LC_ALL, 'RO');
+    setlocale(LC_ALL, 'ro_RO');
     $data_nasterii = date('Y-F-d', strtotime($data_nasterii));
 
     $date1 = date_create(date('Y-m-d', time()));
