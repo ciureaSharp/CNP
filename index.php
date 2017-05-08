@@ -21,8 +21,7 @@ ini_set('max_execution_time', 300);
             box-shadow: 0px 4px 2px #333;
         }
         #btn_genereaza {
-            position: absolute;
-            padding-top: 20px;
+            alignment: center;
         }
     </style>
 
