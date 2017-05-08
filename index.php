@@ -22,6 +22,7 @@ ini_set('max_execution_time', 300);
         }
         #btn_genereaza {
             position: absolute;
+            padding-top: 20px;
         }
     </style>
 
