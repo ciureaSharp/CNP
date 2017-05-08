@@ -45,7 +45,6 @@ ini_set('max_execution_time', 300);
         e.preventDefault();
         var cnp = $('#cnp').val();
         $('#rez').val(cnp);
-        //  alert(cnp);
         if (cnp == "") {
             alert('CNP nu exista. Apasa "Genereaza cnp".');
         } else {

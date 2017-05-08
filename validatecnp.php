@@ -5,7 +5,6 @@
  * Date: 4/24/2017
  * Time: 18:35
  */
-//include ('index.php');
 
 $conn = new mysqli('127.0.0.1', 'digitala_gabi', '133admin133!', 'digitala_dl_gabi');
 global $conn;
