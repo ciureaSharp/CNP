@@ -13,20 +13,22 @@ ini_set('max_execution_time', 300);
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        #header {
+            widows: 100;
+            height: 70px;
+            background-color: #333;
+            box-shadow: 0px 4px 2px #333;
+        }
+    </style>
+
 
 </head>
 <body>
-<form class="form-inline">
-    <div class="form-group">
-        <button type="button" class="btn btn-primary btn-sm" id="btn_genereaza">Genereaza CNP</button>
-        <input id="cnp" class="form-control" type="text" value="" name="cnp">
-    </div>
 
-    <div class="form-group">
-        <button type="button" class="btn btn-success btn-sm" id="btn_verifica">Verifica CNP</button>
-        <input id="rez" class="form-control" type="text" value=""/>
-    </div>
-</form>
+<div id="header">
+
+</div>
 
 
 <script
