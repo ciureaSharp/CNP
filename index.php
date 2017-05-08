@@ -20,6 +20,9 @@ ini_set('max_execution_time', 300);
             background-color: #333;
             box-shadow: 0px 4px 2px #333;
         }
+        #btn_genereaza {
+            position: absolute;
+        }
     </style>
 
 
