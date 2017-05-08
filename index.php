@@ -19,7 +19,7 @@ ini_set('max_execution_time', 300);
 <form class="form-inline">
     <div class="form-group">
         <button type="button" class="btn btn-primary btn-sm" id="btn_genereaza">Genereaza CNP</button>
-        <h2 id="cnp"></h2>
+        <input id="cnp" class="form-control" type="text" value="" name="cnp">
     </div>
 
     <div class="form-group">
