@@ -27,7 +27,7 @@ ini_set('max_execution_time', 300);
 <body>
 
 <div id="header">
-    <button id="btn_genereaza" class="btn btn-primary btn-lg">Genereaza</button>
+    <button id="btn_genereaza" class="btn btn-primary btn-lg" type="submit">Genereaza</button>
 </div>
 
 
