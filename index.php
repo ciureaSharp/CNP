@@ -86,7 +86,7 @@ include_once('functions.php')
        var ids = $('input:checkbox:checked').map(function () {
            return this.value;
        }).get();
-        ids = ids.substring(ids.indexOf(".")+1);
+        ids = ids.substring(3);
         alert(ids);
     });
 
