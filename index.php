@@ -53,7 +53,7 @@ include_once('functions.php')
                         <th>CNP</th>
                         <th>Data adaugarii</th>
                         <th>
-                            <label style="padding-bottom: 0px"><input type="checkbox" id="select_all" checked=''>&nbsp;&nbsp;Selecteaza tot</label>
+                           <a id="select_all">Selecteaza tot</a>
                         </th>
                     </tr>
                     </thead>
@@ -90,7 +90,7 @@ include_once('functions.php')
     });
 
     $('#select_all').click(function () {
-        $('input:checkbox').not(this).prop('checked', this.checked);
+        $('input:checkbox').prop('checked', this.checked);
     });
 
     $('#btn_genereaza').click(function (e) {
