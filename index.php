@@ -14,45 +14,20 @@ ini_set('max_execution_time', 300);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <style>
-        .table-bordered {
-            margin-top: 100px;
-            width: 50%;
-        }
-        th{
-            text-align: center;
-        }
-        table {
-            table-layout: fixed;
-            width: 200px;
-        }
-        #button {
-            margin-left: 1000px;
-            margin-top: 3px;
-        }
-    </style>
+
 </head>
 <body>
 
-<div id="table-buttons" class="inline-block">
-    <div id="table">
-        <table class="table-bordered">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>sex</th>
-                    <th>data nasterii</th>
-                    <th>varsta</th>
-                    <th>locul nasterii</th>
-                    <th>CNP</th>
-                </tr>
-            </thead>
-        </table>
-        <div id="buttons">
-            <button id="btn_genereaza" class="btn btn-primary" type="submit"></button>
-        </div>
+<div class="btn-group btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Left</button>
     </div>
-
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Middle</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
 </div>
 
 <script
