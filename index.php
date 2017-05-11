@@ -23,13 +23,13 @@ ini_set('max_execution_time', 300);
         <div class="col-md-12">
             <div id="buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
                 <div class="btn-group" role="group">
-                    <button id="btn_genereaza" class="btn btn-default" type="submit">Genereaza</button>
+                    <button id="btn_genereaza" class="btn btn-success" type="submit">Genereaza</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="btn_verifica" class="btn btn-default" type="submit">Insereaza</button>
+                    <button id="btn_verifica" class="btn btn-info" type="submit">Insereaza</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="btn_sterge" class="btn btn-default" type="submit">Sterge</button>
+                    <button id="btn_sterge" class="btn btn-warning" type="submit">Sterge</button>
                 </div>
             </div>
         </div>
