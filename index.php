@@ -18,6 +18,7 @@ ini_set('max_execution_time', 300);
         .table-bordered {
             margin-top: 100px;
             width: 50%;
+            text-align: center;
         }
     </style>
 </head>
@@ -26,7 +27,7 @@ ini_set('max_execution_time', 300);
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th align="center">id</th>
+            <th>id</th>
             <th>sex</th>
             <th>data_nasterii</th>
             <th>varsta</th>
