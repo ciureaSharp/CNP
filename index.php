@@ -13,45 +13,22 @@ ini_set('max_execution_time', 300);
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-        #table_background {
-            width: 700px;
-            height: 100%;
-            background-color: #333;
-            box-shadow: 0px 4px 2px #333;
-            left: 50%;
-            margin-left: -350px;
-            margin-top: 30px;
-            padding-bottom: 20px;
-            padding-top: 20px;
-        }
-        #title {
-            text-align: center;
-            font-family: arial, sans-serif;
-        }
-        #button_background {
-            width: 80px;
-            height: 150px;
-            background-color: #333;
-            box-shadow: 0px 4px 2px #333;
-            margin-left: 10px;
-            margin-top: 50px;
-        }
-    </style>
 
 </head>
 <body>
 
-<h2 id="title">Users Table</h2>
-
-<div id="table_background">
-
-</div>
-
-<div id="button_background">
-
-</div>
-
+<table class="table">
+    <thead class="thead-inverse">
+        <tr>
+            <th>id</th>
+            <th>sex</th>
+            <th>data_nasterii</th>
+            <th>varsta</th>
+            <th>locul_nasterii</th>
+            <th>cnp</th>
+        </tr>
+    </thead>
+</table>
 
 <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
