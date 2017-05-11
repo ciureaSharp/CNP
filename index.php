@@ -13,11 +13,21 @@ ini_set('max_execution_time', 300);
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        #header {
+            width: 80%;
+            height: 60px;
+            background-color: #333;
+            box-shadow: 0px 4px 2px #333;
+        }
+    </style>
 
 </head>
 <body>
 
+<div id="header">
 
+</div>
 
 
 <script
