@@ -17,7 +17,7 @@ ini_set('max_execution_time', 300);
 </head>
 <body>
 
-<table class="table table-inverse">
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>id</th>
