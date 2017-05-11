@@ -48,10 +48,12 @@ include_once('functions.php')
                     <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Gen</th>
                         <th>Data nasterii</th>
                         <th>Varsta</th>
                         <th>Locul nasterii</th>
                         <th>CNP</th>
+                        <th>Data adaugarii</th>
                     </tr>
                     </thead>
                     <tbody>
