@@ -59,6 +59,8 @@ include_once('functions.php')
                     <tbody>
                     <?php
                     $user = get_users();
+                    echo'<pre>';
+                    var_dump($user);
                     foreach ($user as $u) {
                         echo "<tr>
                                 <td>".$u['id']."</td>
