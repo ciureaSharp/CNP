@@ -96,6 +96,12 @@ include_once('functions.php')
 
 
 <script>
+    var ids;
+    $('#btn_confirma_stergere').click(function (e) {
+        e.preventDefault();
+        alert(ids);
+    });
+
     $('#btn_renunta_stergere').click(function (e) {
         e.preventDefault();
         $('#select_all').trigger('click');
@@ -104,7 +110,7 @@ include_once('functions.php')
     });
 
     $('#btn_Sterge').click(function () {
-        var ids = $('input[name=user_id]:checkbox:checked').map(function () {
+        ids = $('input[name=user_id]:checkbox:checked').map(function () {
             return this.value;
         }).get();
         if (ids.length > 0) {
