@@ -67,7 +67,7 @@ include_once('functions.php')
                                 <td>" . $u['locul_nasterii'] . "</td>
                                 <td>" . $u['cnp'] . "</td>
                                 <td>" . $u['timestamp'] . "</td>
-                                <td></td>
+                                <td><input type='checkbox' value='" . $u['id'] . "'></td>
                             </tr>";
                     }
                     ?>
