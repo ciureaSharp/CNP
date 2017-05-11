@@ -33,12 +33,12 @@ ini_set('max_execution_time', 300);
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>id</th>
+            <th>ID</th>
             <th>sex</th>
-            <th>data_nasterii</th>
+            <th>data nasterii</th>
             <th>varsta</th>
-            <th>locul_nasterii</th>
-            <th>cnp</th>
+            <th>locul nasterii</th>
+            <th>CNP</th>
         </tr>
     </thead>
 </table>
