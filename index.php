@@ -2,6 +2,10 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 ini_set('max_execution_time', 300);
+// bootstrap
+// caractere internationale (diacritice)
+// afisare tabel cu peste 15 useri
+//
 ?>
 
 <!DOCTYPE html>
