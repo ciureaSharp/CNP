@@ -22,8 +22,9 @@ ini_set('max_execution_time', 300);
         th{
             text-align: center;
         }
-        tr{
-            box-sizing: inherit;
+        table {
+            table-layout: fixed;
+            width: 200px;
         }
     </style>
 </head>
