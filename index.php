@@ -42,8 +42,10 @@ ini_set('max_execution_time', 300);
         </tr>
     </thead>
 </table>
+
 <div id="button">
     <button id="btn_genereaza" type="submit" class="btn btn-primary">Genereaza</button>
+    <p id="cnp"></p>
 </div>
 
 <script
