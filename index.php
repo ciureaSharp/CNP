@@ -103,11 +103,11 @@ include_once('functions.php')
             url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
             data: {
                 action: 'delete_users',
-                id_delete: ids
+                id_delete: JSON.stringify(ids)
             },
             type: 'post',
             success: function (data) {
-                if(data == "OK"){
+                if(data === "OK"){
                     $("#main_result").addClass("alert-success");
                     $('#main_result_text').text("Id-urile: " + ids + " au fost sterse!");
                     window.setTimeout(function () {
