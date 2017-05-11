@@ -18,7 +18,6 @@ ini_set('max_execution_time', 300);
         .table-bordered {
             margin-top: 100px;
             width: 50%;
-            right: 300px;
         }
         th{
             text-align: center;
@@ -26,6 +25,7 @@ ini_set('max_execution_time', 300);
         table {
             table-layout: fixed;
             width: 200px;
+            right: 10px;
         }
     </style>
 </head>
