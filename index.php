@@ -21,6 +21,7 @@ ini_set('max_execution_time', 300);
         }
         th{
             text-align: center;
+            width: 30px;
         }
     </style>
 </head>
