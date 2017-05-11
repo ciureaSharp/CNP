@@ -17,12 +17,13 @@ ini_set('max_execution_time', 300);
     <style>
         .table-bordered {
             margin-top: 100px;
+            width: 50%;
         }
     </style>
 </head>
 <body>
 
-<table class="table table-bordered table-inverse">
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>id</th>
