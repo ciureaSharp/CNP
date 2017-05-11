@@ -22,16 +22,12 @@ include_once('functions.php')
 <div class="container">
     <div class="row" style="margin: 50px 0px 50px 0px">
         <div class="col-md-12">
-            <div id="buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
-                <div class="btn-group" role="group">
-                    <button id="btn_genereaza" class="btn btn-success" type="submit">Genereaza</button>
-                </div>
-                <div class="btn-group" role="group">
-                    <button id="btn_insereaza" class="btn btn-info" type="submit">Insereaza</button>
-                </div>
-                <div class="col-md-4">
-
-                </div>
+            <div class="col-md-4">
+                <button id="btn_genereaza" class="btn btn-success" type="submit">Genereaza</button>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <button id="btn_insereaza" class="btn btn-info" type="submit">Insereaza</button>
             </div>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
@@ -61,15 +57,15 @@ include_once('functions.php')
                     $user = get_users();
                     foreach ($user as $u) {
                         echo "<tr>
-                                <td>".$u['id']."</td>
-                                <td>".$u['sex']."</td>
-                                <td>".$u['data_nasterii']."</td>
-                                <td>".$u['varsta']."</td>
-                                <td>".$u['locul_nasterii']."</td>
-                                <td>".$u['cnp']."</td>
-                                <td>".$u['timestamp']."</td>
+                                <td>" . $u['id'] . "</td>
+                                <td>" . $u['sex'] . "</td>
+                                <td>" . $u['data_nasterii'] . "</td>
+                                <td>" . $u['varsta'] . "</td>
+                                <td>" . $u['locul_nasterii'] . "</td>
+                                <td>" . $u['cnp'] . "</td>
+                                <td>" . $u['timestamp'] . "</td>
                             </tr>";
-                                }
+                    }
                     ?>
                     </tbody>
                 </table>
@@ -123,7 +119,7 @@ include_once('functions.php')
                                 $("#main_result").addClass('alert-info');
                                 $("#main_result_text").text("Inserat cu succes");
                                 window.setTimeout(function () {
-                                   location.reload();
+                                    location.reload();
                                 }, 2000);
                             } else {
                                 $("#main_result").removeClass('alert-success');
