@@ -34,7 +34,14 @@ include_once('functions.php')
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="alert" id="main_result" style="margin-top: 20px; "><p class="text-center"
-                                                                                      id="main_result_text"></p></div>
+                                                                                      id="main_result_text"></p>
+                        <div class="col-md-3 col-md-offset-3">
+                            <button id="btn_confirma_stergere" class="btn btn-success btn-lg btn-block" type="submit">Sterge</button>
+                        </div>
+                        <div class="col-md-3 col-md-offset-3">
+                            <button id="btn_renunta_stergere" class="btn btn-danger btn-lg btn-block" type="submit">Renunta</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
