@@ -82,6 +82,13 @@ include_once('functions.php')
 
 
 <script>
+    $('#btn_Sterge').click(function () {
+       var ids = $('input:checkbox:checked').map(function () {
+           return this.value;
+       }).get();
+        alert(ids);
+    });
+
     $('#select_all').click(function () {
         $('input:checkbox').not(this).prop('checked', this.checked);
     });
