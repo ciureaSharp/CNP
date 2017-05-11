@@ -45,7 +45,7 @@ ini_set('max_execution_time', 300);
 
 <div id="button">
     <button id="btn_genereaza" type="submit" class="btn btn-primary">Genereaza</button>
-    <p id="cnp"></p>
+    <input id="cnp" />
 </div>
 
 <script
