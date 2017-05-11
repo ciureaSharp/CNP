@@ -32,6 +32,7 @@ ini_set('max_execution_time', 300);
                     <button id="btn_sterge" class="btn btn-warning" type="submit">Sterge</button>
                 </div>
             </div>
+            <div class="alert" ><p id="cnp_success"></p></div>
         </div>
     </div>
     <div class="row">
@@ -58,13 +59,13 @@ ini_set('max_execution_time', 300);
     $('#btn_genereaza').click(function (e) {
         e.preventDefault();
         $.post('randomcnp.php', function (data) {
-            $('#cnp').val(data);
+            $('#cnp_success').text(data);
         });
     });
     $('#btn_verifica').click(function (e) {
         e.preventDefault();
         var cnp = $('#cnp').val();
-        $('#rez').val(cnp);
+        $('#rez').(cnp);
         if (cnp == "") {
             alert('CNP nu exista. Apasa "Genereaza cnp".');
         } else {
