@@ -32,7 +32,12 @@ ini_set('max_execution_time', 300);
                     <button id="btn_sterge" class="btn btn-warning" type="submit">Sterge</button>
                 </div>
             </div>
-            <div class="alert" id="main_result"><p class="text-center" id="main_result_text"></p></div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="alert" id="main_result" style="margin-top: 20px; "><p class="text-center"
+                                                                                      id="main_result_text"></p></div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
