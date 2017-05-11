@@ -43,7 +43,7 @@ ini_set('max_execution_time', 300);
     <div class="row">
         <div class="col-md-12">
             <div id="tabel">
-                <table class="table table-bordered">
+                <table class="table table-striped">
                     <thead>
                     <tr>
                         <th>ID</th>
