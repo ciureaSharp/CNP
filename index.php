@@ -23,11 +23,11 @@ include_once('functions.php')
     <div class="row" style="margin: 50px 0px 50px 0px">
         <div class="col-md-12">
             <div class="col-md-4">
-                <button id="btn_genereaza" class="btn btn-success" type="submit">Genereaza</button>
+                <button id="btn_genereaza" class="btn btn-success btn-lg btn-block" type="submit">Genereaza</button>
             </div>
             <div class="col-md-4"></div>
             <div class="col-md-4">
-                <button id="btn_insereaza" class="btn btn-info" type="submit">Insereaza</button>
+                <button id="btn_insereaza" class="btn btn-info btn-lg btn-block" type="submit">Insereaza</button>
             </div>
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
