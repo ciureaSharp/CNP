@@ -2,6 +2,7 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 ini_set('max_execution_time', 300);
+include_once('functions.php')
 ?>
 
 <!DOCTYPE html>
@@ -41,6 +42,10 @@ ini_set('max_execution_time', 300);
         </div>
     </div>
     <div class="row">
+        <?php
+        $users = get_users();
+        var_dump($users);
+        ?>
         <div class="col-md-12">
             <div class="table-responsive" id="tabel">
                 <table class="table table-striped">
