@@ -81,7 +81,7 @@ include_once('functions.php')
 
 <script>
     $('#select_all').click(function () {
-        
+        $('input:checkbox').not(this).prop('checked', this.checked);
     });
 
     $('#btn_genereaza').click(function (e) {
