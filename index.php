@@ -17,7 +17,6 @@ ini_set('max_execution_time', 300);
 <style>
     #buttons {
         width: 50%;
-        left: 50%;
         margin-top: 15px;
         margin-left: 15px;
     }
