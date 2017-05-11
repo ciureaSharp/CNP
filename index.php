@@ -20,7 +20,7 @@ include_once('functions.php')
 <body>
 
 <div class="container">
-    <div class="row" style="margin: 150px 0px 150px 0px">
+    <div class="row" style="margin: 50px 0px 50px 0px">
         <div class="col-md-12">
             <div id="buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
                 <div class="btn-group" role="group">
