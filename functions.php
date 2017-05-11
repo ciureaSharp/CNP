@@ -36,5 +36,12 @@ function get_users()
 
 function delete_users(){
     $ids = $_POST['id_delete'];
-    echo json_encode($ids);
+    global $conn;
+    if($stmt = $conn->prepare('DELETE FROM user_data WHERE id IN(?)')){
+        $stmt->bind_param('s', $ids);
+        $stmt->execute();
+        return 'OK';
+    } else {
+        return $conn->error;
+    }
 }

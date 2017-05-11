@@ -107,7 +107,15 @@ include_once('functions.php')
             },
             type: 'post',
             success: function (data) {
-                alert(data);
+                if(data == "OK"){
+                    $("#main_result").addClass("alert-success");
+                    $('#main_result_text').text("Id-urile: " + ids + " au fost sterse!");
+                    window.setTimeout(function () {
+                        location.reload();
+                    }, 3000);
+                } else {
+                    alert(data);
+                }
             }
         });
     });
