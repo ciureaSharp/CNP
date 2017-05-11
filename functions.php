@@ -36,5 +36,5 @@ function get_users()
 
 function delete_users(){
     $ids = $_POST['id_delete'];
-    return $ids;
+    echo json_encode($ids);
 }
