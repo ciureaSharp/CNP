@@ -30,6 +30,14 @@ ini_set('max_execution_time', 300);
             text-align: center;
             font-family: arial, sans-serif;
         }
+        #button_background {
+            width: 80px;
+            height: 150px;
+            background-color: #333;
+            box-shadow: 0px 4px 2px #333;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
     </style>
 
 </head>
@@ -41,7 +49,7 @@ ini_set('max_execution_time', 300);
 
 </div>
 
-<div id="">
+<div id="button_background">
 
 </div>
 
