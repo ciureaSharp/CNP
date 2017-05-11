@@ -21,9 +21,9 @@ function get_users()
             $ret[$i]['sex'] = $sex;
             $ret[$i]['data_nasterii'] = $data_nasterii;
             $ret[$i]['varsta'] = $varsta;
-            $ret[$i]['$locul_nasterii'] = $locul_nasterii;
+            $ret[$i]['locul_nasterii'] = $locul_nasterii;
             $ret[$i]['cnp'] = $cnp;
-            $ret[$i]['$timestamp'] = $timestamp;
+            $ret[$i]['timestamp'] = $timestamp;
             $i++;
         }
         return $ret;
