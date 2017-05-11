@@ -34,7 +34,8 @@ include_once('functions.php')
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="alert" id="main_result" style="margin-top: 20px; "><p class="text-center"
-                                                                                      id="main_result_text">
+                                                                                      id="main_result_text"></p>
+                        <p>
                         <div id="grup_butoane_confirmare" class="hidden">
                             <div class="col-md-3 col-md-offset-3">
                                 <button id="btn_confirma_stergere" class="btn btn-success btn-sm btn-block"
