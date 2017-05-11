@@ -17,8 +17,8 @@ ini_set('max_execution_time', 300);
 </head>
 <body>
 
-<table class="table">
-    <thead class="thead-inverse">
+<table class="table table-inverse">
+    <thead>
         <tr>
             <th>id</th>
             <th>sex</th>
