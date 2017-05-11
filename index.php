@@ -34,7 +34,7 @@ ini_set('max_execution_time', 300);
 </head>
 <body>
 
-<div id="table-buttons" class="inline">
+<div id="table-buttons" class="inline-block">
     <div id="table">
         <table class="table-bordered">
             <thead>
