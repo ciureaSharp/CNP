@@ -13,25 +13,11 @@ ini_set('max_execution_time', 300);
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        #header {
-            widows: 100;
-            height: 70px;
-            background-color: #333;
-            box-shadow: 0px 4px 2px #333;
-        }
-        #btn_genereaza {
-            alignment: center;
-        }
-    </style>
-
 
 </head>
 <body>
 
-<div id="header">
-    <button id="btn_genereaza" class="btn btn-primary btn-lg" type="submit">Genereaza</button>
-</div>
+
 
 
 <script
