@@ -15,14 +15,13 @@ ini_set('max_execution_time', 300);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         #header {
-            position: absolute;
             width: 250px;
             height: 200px;
             background-color: #333;
             box-shadow: 0px 4px 2px #333;
             left: 50%
             position: fixed;
-            
+
         }
     </style>
 
