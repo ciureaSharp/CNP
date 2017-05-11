@@ -29,8 +29,8 @@ include_once('functions.php')
                 <div class="btn-group" role="group">
                     <button id="btn_insereaza" class="btn btn-info" type="submit">Insereaza</button>
                 </div>
-                <div class="btn-group" role="group">
-                    <button id="btn_sterge" class="btn btn-warning" type="submit">Sterge</button>
+                <div class="col-md-4">
+
                 </div>
             </div>
             <div class="row">
