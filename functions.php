@@ -24,6 +24,7 @@ function get_users()
             $ret[$i]['$locul_nasterii'] = $locul_nasterii;
             $ret[$i]['cnp'] = $cnp;
             $ret[$i]['$timestamp'] = $timestamp;
+            $i++;
         }
         return $ret;
     } else {
