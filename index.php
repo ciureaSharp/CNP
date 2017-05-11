@@ -20,7 +20,9 @@ ini_set('max_execution_time', 300);
             height: 200px;
             background-color: #333;
             box-shadow: 0px 4px 2px #333;
-            object-position: center;
+            left: 50%
+            position: fixed;
+            
         }
     </style>
 
