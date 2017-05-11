@@ -86,7 +86,8 @@ include_once('functions.php')
        var ids = $('input[name=user_id]:checkbox:checked').map(function () {
            return this.value;
        }).get();
-        alert(ids);
+        $("#main_result").addClass("alert-warning");
+        $('#main_result_text').text("Esti sigur ca vrei sa stergi userii cu id-urile: " + ids + "?");
     });
 
     $('#select_all').click(function () {
