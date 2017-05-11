@@ -25,7 +25,6 @@ ini_set('max_execution_time', 300);
         table {
             table-layout: fixed;
             width: 200px;
-            position: static;
         }
     </style>
 </head>
@@ -43,6 +42,9 @@ ini_set('max_execution_time', 300);
         </tr>
     </thead>
 </table>
+<div id="button">
+    <button id="btn_genereaza" type="submit" class="btn btn-primary">Genereaza</button>
+</div>
 
 <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
