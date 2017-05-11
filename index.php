@@ -25,6 +25,7 @@ ini_set('max_execution_time', 300);
         table {
             table-layout: fixed;
             width: 200px;
+            position: static;
         }
     </style>
 </head>
@@ -32,7 +33,7 @@ ini_set('max_execution_time', 300);
 
 <table class="table table-bordered">
     <thead>
-        <tr class="table-success">
+        <tr>
             <th>ID</th>
             <th>sex</th>
             <th>data nasterii</th>
