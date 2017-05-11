@@ -20,6 +20,11 @@ ini_set('max_execution_time', 300);
         margin-top: 15px;
         margin-left: 15px;
     }
+    #span {
+        width: 50%;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
 </style>
 
 </head>
@@ -37,7 +42,7 @@ ini_set('max_execution_time', 300);
     </div>
 </div>
 
-<div class="alert alert-danger" role="alert">
+<div id="span" class="alert alert-danger" role="alert">
     <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
     <span class="sr-only">Error:</span>
     Enter a valid email address
