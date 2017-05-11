@@ -42,10 +42,6 @@ include_once('functions.php')
         </div>
     </div>
     <div class="row">
-        <?php
-        $users = get_users();
-        var_dump($users);
-        ?>
         <div class="col-md-12">
             <div class="table-responsive" id="tabel">
                 <table class="table table-striped">
@@ -58,6 +54,22 @@ include_once('functions.php')
                         <th>CNP</th>
                     </tr>
                     </thead>
+                    <tbody>
+                    <?php
+                    $user = get_users();
+                    foreach ($user as $u) {
+                        echo "<tr>
+                                <td>".$u['id']."</td>
+                                <td>".$u['sex']."</td>
+                                <td>".$u['data_nasterii']."</td>
+                                <td>".$u['varsta']."</td>
+                                <td>".$u['locul_nasterii']."</td>
+                                <td>".$u['cnp']."</td>
+                                <td>".$u['timestamp']."</td>
+                            </tr>";
+                                }
+                    ?>
+                    </tbody>
                 </table>
             </div>
         </div>
