@@ -51,7 +51,7 @@ include_once('functions.php')
                         <th>CNP</th>
                         <th>Data adaugarii</th>
                         <th>
-                            <label><input type="checkbox" id="select_all">&nbsp;&nbsp;Selecteaza tot</label>
+                            <label style="padding-bottom: 0px"><input type="checkbox" id="select_all">&nbsp;&nbsp;Selecteaza tot</label>
                         </th>
                     </tr>
                     </thead>
@@ -67,7 +67,7 @@ include_once('functions.php')
                                 <td>" . $u['locul_nasterii'] . "</td>
                                 <td>" . $u['cnp'] . "</td>
                                 <td>" . $u['timestamp'] . "</td>
-                                <td><input type='checkbox' value='" . $u['id'] . "'></td>
+                                <td class='text-center'><input type='checkbox' value='" . $u['id'] . "'></td>
                             </tr>";
                     }
                     ?>
