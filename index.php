@@ -122,6 +122,9 @@ include_once('functions.php')
                                 $("#main_result").removeClass('alert-success');
                                 $("#main_result").addClass('alert-info');
                                 $("#main_result_text").text("Inserat cu succes");
+                                window.setTimeout(function () {
+                                   location.reload();
+                                }, 2000);
                             } else {
                                 $("#main_result").removeClass('alert-success');
                                 $("#main_result").addClass('alert-danger');
