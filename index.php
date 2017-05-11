@@ -103,7 +103,7 @@ include_once('functions.php')
             url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
             data: {
                 action: 'delete_users',
-                id_delete: JSON.stringify(ids)
+                id_delete: ids
             },
             type: 'post',
             success: function (data) {
