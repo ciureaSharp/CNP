@@ -100,9 +100,13 @@ ini_set('max_execution_time', 300);
                         type: 'post',
                         success: function (data) {
                             if ($.isNumeric(data)) {
-                                alert('success');
+                                $("#main_result").removeClass('alert-success');
+                                $("#main_result").addClass('alert-info');
+                                $("#main_result_text").text("Inserat cu succes");
                             } else {
-                                alert(data);
+                                $("#main_result").removeClass('alert-success');
+                                $("#main_result").addClass('alert-danger');
+                                $("#main_result_text").text(data);
                             }
                         }
                     });
