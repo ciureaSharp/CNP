@@ -26,7 +26,7 @@ ini_set('max_execution_time', 300);
                     <button id="btn_genereaza" class="btn btn-success" type="submit">Genereaza</button>
                 </div>
                 <div class="btn-group" role="group">
-                    <button id="btn_verifica" class="btn btn-info" type="submit">Insereaza</button>
+                    <button id="btn_insereaza" class="btn btn-info" type="submit">Insereaza</button>
                 </div>
                 <div class="btn-group" role="group">
                     <button id="btn_sterge" class="btn btn-warning" type="submit">Sterge</button>
@@ -68,10 +68,11 @@ ini_set('max_execution_time', 300);
             $('#main_result_text').text(data);
         });
     });
-    $('#btn_verifica').click(function (e) {
+    $('#btn_insereaza').click(function (e) {
         e.preventDefault();
-        var cnp = $('#cnp').val();
-        $('#rez').val(cnp);
+        var cnp = $('#main_result_text').text();
+        alert(cnp);
+        $('#rez').text(cnp);
         if (cnp == "") {
             alert('CNP nu exista. Apasa "Genereaza cnp".');
         } else {
