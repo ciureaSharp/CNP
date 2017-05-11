@@ -26,16 +26,18 @@ ini_set('max_execution_time', 300);
             padding-bottom: 20px;
             padding-top: 20px;
         }
-        #header p {
-            color: white;
+        #title {
+            text-align: center;
+            font-family: arial, sans-serif;
         }
     </style>
 
 </head>
 <body>
 
+<h2 id="title">Users Table</h2>
 <div id="header">
-    <p>Users table</p>
+
 </div>
 
 
