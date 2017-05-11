@@ -96,6 +96,12 @@ include_once('functions.php')
 
 
 <script>
+    $('#buton_renunta_stergere').click(function (e) {
+        e.preventDefault();
+        $('input[name=user_id]:checkbox:checked').prop('unchecked');
+        location.reload();
+    });
+
     $('#btn_Sterge').click(function () {
         var ids = $('input[name=user_id]:checkbox:checked').map(function () {
             return this.value;
