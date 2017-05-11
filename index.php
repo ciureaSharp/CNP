@@ -19,7 +19,6 @@ ini_set('max_execution_time', 300);
             height: 100%;
             background-color: #333;
             box-shadow: 0px 4px 2px #333;
-            position: absolute;
             left: 50%;
             margin-left: -350px;
             margin-top: 30px;
