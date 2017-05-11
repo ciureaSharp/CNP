@@ -50,6 +50,9 @@ include_once('functions.php')
                         <th>Locul nasterii</th>
                         <th>CNP</th>
                         <th>Data adaugarii</th>
+                        <th>
+                            <label><input type="checkbox" id="select_all"></label>
+                        </th>
                     </tr>
                     </thead>
                     <tbody>
@@ -64,6 +67,7 @@ include_once('functions.php')
                                 <td>" . $u['locul_nasterii'] . "</td>
                                 <td>" . $u['cnp'] . "</td>
                                 <td>" . $u['timestamp'] . "</td>
+                                <td></td>
                             </tr>";
                     }
                     ?>
