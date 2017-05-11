@@ -36,12 +36,10 @@ function get_users()
 
 function delete_users(){
     $ids = implode(',',$_POST['id_delete']);
-    var_dump($ids);die();
     global $conn;
-    if($stmt = $conn->prepare('DELETE FROM user_data WHERE id IN(?)')){
-        $stmt->bind_param('s', $ids);
+    if($stmt = $conn->prepare('DELETE FROM user_data WHERE id IN('.$ids.')')){
         $stmt->execute();
-        return 'OK';
+        return $stmt->affected_rows;
     } else {
         return $conn->error;
     }
