@@ -69,7 +69,7 @@ include_once('functions.php')
                                 <td>" . $u['locul_nasterii'] . "</td>
                                 <td>" . $u['cnp'] . "</td>
                                 <td>" . $u['timestamp'] . "</td>
-                                <td class='text-center'><input type='checkbox' value='" . $u['id'] . "'></td>
+                                <td class='text-center'><input type='checkbox' name='user_id' value='" . $u['id'] . "'></td>
                             </tr>";
                     }
                     ?>
@@ -90,7 +90,7 @@ include_once('functions.php')
     });
 
     $('#select_all').click(function () {
-        $('input:checkbox').not(this).prop('checked', this.checked);
+        $("input[name='user_id']").prop('checked', this.checked);
     });
 
     $('#btn_genereaza').click(function (e) {
