@@ -98,7 +98,8 @@ include_once('functions.php')
 <script>
     $('#btn_renunta_stergere').click(function (e) {
         e.preventDefault();
-        $('input:checkbox:checked').prop('unchecked');
+        $('#select_all').trigger('click');
+        $('#select_all').trigger('click');
         location.reload();
     });
 
