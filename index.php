@@ -37,12 +37,12 @@ include_once('functions.php')
                                                                                       id="main_result_text"></p>
                     </div>
                     <div id="grup_butoane_confirmare" class="hidden">
-                        <div class="col-md-3 col-md-offset-3">
+                        <div class="col-md-3 col-md-offset-1">
                             <button id="btn_confirma_stergere" class="btn btn-success btn-sm btn-block"
                                     type="submit">Sterge
                             </button>
                         </div>
-                        <div class="col-md-3 col-md-offset-3">
+                        <div class="col-md-3 col-md-offset-4">
                             <button id="btn_renunta_stergere" class="btn btn-danger btn-sm btn-block" type="submit">
                                 Renunta
                             </button>
