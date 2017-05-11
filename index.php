@@ -26,6 +26,9 @@ ini_set('max_execution_time', 300);
             padding-bottom: 20px;
             padding-top: 20px;
         }
+        #header p {
+            color: white;
+        }
     </style>
 
 </head>
