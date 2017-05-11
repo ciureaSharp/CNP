@@ -26,6 +26,9 @@ ini_set('max_execution_time', 300);
             table-layout: fixed;
             width: 200px;
         }
+        #button {
+            margin-left: 300px;
+        }
     </style>
 </head>
 <body>
