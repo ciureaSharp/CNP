@@ -42,7 +42,7 @@ ini_set('max_execution_time', 300);
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div id="tabel">
+            <div class="table-responsive" id="tabel">
                 <table class="table table-striped">
                     <thead>
                     <tr>
