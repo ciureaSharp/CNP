@@ -46,6 +46,18 @@ ini_set('max_execution_time', 300);
 
 </div>
 
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Data nasterii</th>
+            <th>Varsta</th>
+            <th>Locul nasterii</th>
+            <th>CNP</th>
+        </tr>
+    </thead>
+</table>
+
 <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
