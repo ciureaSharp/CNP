@@ -22,7 +22,7 @@ ini_set('max_execution_time', 300);
             position: fixed;
             left: 50%;
             margin-left: -350px;
-            margin-top: 20px;
+            margin-top: 100px;
             padding-bottom: 20px;
             padding-top: 20px;
         }
