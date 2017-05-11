@@ -14,11 +14,16 @@ ini_set('max_execution_time', 300);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<style>
+    #buttons {
+        width: 50%;
+    }
+</style>
 
 </head>
 <body>
 
-<div class="btn-group btn-group-justified" role="group" aria-label="...">
+<div id="buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
     <div class="btn-group" role="group">
         <button type="button" class="btn btn-default">Left</button>
     </div>
