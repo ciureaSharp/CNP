@@ -26,11 +26,6 @@ function add_user_data()
     }
 }
 
-if (isset($_POST['action']) && !empty($_POST['action'])) {
-    $function = $_POST['action'];
-    return $function();
-}
-
 
 function get_cnp_info()
 {
