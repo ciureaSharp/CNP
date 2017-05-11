@@ -18,7 +18,6 @@ ini_set('max_execution_time', 300);
         .table-bordered {
             margin-top: 100px;
             width: 50%;
-            padding-left: 10px;
         }
         th{
             text-align: center;
@@ -33,7 +32,7 @@ ini_set('max_execution_time', 300);
 
 <table class="table table-bordered">
     <thead>
-        <tr>
+        <tr class="table-success">
             <th>ID</th>
             <th>sex</th>
             <th>data nasterii</th>
