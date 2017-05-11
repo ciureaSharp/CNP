@@ -41,7 +41,7 @@ include_once('functions.php')
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" style="margin-bottom: 50px">
         <div class="col-md-12">
             <div class="table-responsive" id="tabel">
                 <table class="table table-striped">
