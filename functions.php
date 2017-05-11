@@ -12,7 +12,7 @@ global $conn;
 function get_users()
 {
     global $conn;
-    if ($stmt = $conn->prepare('SELECT id, sex , data_nasterii, varsta, locul_nasterii, cnp, `timestamp` FROM user_data')) {
+    if ($stmt = $conn->prepare('SELECT id, sex , data_nasterii, varsta, locul_nasterii, cnp, `timestamp` FROM user_data ORDER BY id DESC')) {
         $stmt->execute();
         $stmt->bind_result($id, $sex, $data_nasterii, $varsta, $locul_nasterii, $cnp, $timestamp);
         $stmt->store_result();
