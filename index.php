@@ -19,7 +19,7 @@ ini_set('max_execution_time', 300);
         width: 50%;
         left: 50%;
         margin-top: 15px;
-        margin-left: -350px;
+        margin-left: 15px;
     }
 </style>
 
