@@ -12,9 +12,9 @@ function get_users()
 {
     global $conn;
     if ($stmt = $conn->prepare('SELECT * FROM user_data')) {
-        $conn->execute();
-        $conn->bind_result($id, $data_nasterii, $varsta, $locul_nasterii, $cnp, $timestamp);
-        $conn->store_result();
+        $stmt->execute();
+        $stmt->bind_result($id, $data_nasterii, $varsta, $locul_nasterii, $cnp, $timestamp);
+        $stmt->store_result();
         while ($stmt->fetch()) {
             $ret[] = array($id, $data_nasterii, $varsta, $locul_nasterii, $cnp, $timestamp);
         }
