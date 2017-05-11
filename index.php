@@ -18,27 +18,56 @@ ini_set('max_execution_time', 300);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+<style>
+    #buttons {
+        width: 50%;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    #span {
+        width: 50%;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+</style>
+
 </head>
 <body>
-<form class="form-inline">
-    <div class="form-group">
-        <button type="button" class="btn btn-primary btn-sm" id="btn_genereaza">Genereaza CNP</button>
-        <input id="cnp" class="form-control" type="text" value="" name="cnp">
-    </div>
 
-    <div class="form-group">
-        <button type="button" class="btn btn-success btn-sm" id="btn_verifica">Verifica CNP</button>
-        <input id="rez" class="form-control" type="text" value=""/>
+<div id="buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
+    <div class="btn-group" role="group">
+        <button id="btn_genereaza" class="btn btn-default" type="submit">Genereaza</button>
     </div>
-</form>
+    <div class="btn-group" role="group">
+        <button id="btn_verifica"class="btn btn-default" type="submit">Insereaza</button>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="btn_sterge" class="btn btn-default" type="submit">Sterge</button>
+    </div>
+</div>
 
+<div id="span" class="alert alert-danger" role="alert">
+
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Data nasterii</th>
+            <th>Varsta</th>
+            <th>Locul nasterii</th>
+            <th>CNP</th>
+        </tr>
+    </thead>
+</table>
 
 <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous">
+</script>
 <script>
-
     $('#btn_genereaza').click(function (e) {
         e.preventDefault();
         $.post('randomcnp.php', function (data) {
@@ -49,7 +78,6 @@ ini_set('max_execution_time', 300);
         e.preventDefault();
         var cnp = $('#cnp').val();
         $('#rez').val(cnp);
-        //  alert(cnp);
         if (cnp == "") {
             alert('CNP nu exista. Apasa "Genereaza cnp".');
         } else {
