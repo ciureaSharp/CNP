@@ -14,12 +14,12 @@ ini_set('max_execution_time', 300);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        #header {
+        #table_background {
             width: 700px;
             height: 100%;
             background-color: #333;
             box-shadow: 0px 4px 2px #333;
-            position: fixed;
+            position: absolute;
             left: 50%;
             margin-left: -350px;
             margin-top: 30px;
@@ -36,7 +36,12 @@ ini_set('max_execution_time', 300);
 <body>
 
 <h2 id="title">Users Table</h2>
-<div id="header">
+
+<div id="table_background">
+
+</div>
+
+<div id="">
 
 </div>
 
