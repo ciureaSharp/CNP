@@ -16,7 +16,7 @@ ini_set('max_execution_time', 300);
     <style>
         #header {
             width: 80%;
-            height: 60px;
+            height: 200px;
             background-color: #333;
             box-shadow: 0px 4px 2px #333;
         }
