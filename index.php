@@ -80,6 +80,10 @@ include_once('functions.php')
 
 
 <script>
+    $('#select_all').click(function () {
+        
+    });
+
     $('#btn_genereaza').click(function (e) {
         e.preventDefault();
         $.post('randomcnp.php', function (data) {
@@ -87,6 +91,7 @@ include_once('functions.php')
             $('#main_result_text').text(data);
         });
     });
+
     $('#btn_insereaza').click(function (e) {
         e.preventDefault();
         var cnp = $('#main_result_text').text();
