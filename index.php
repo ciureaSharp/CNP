@@ -53,7 +53,7 @@ include_once('functions.php')
                         <th>CNP</th>
                         <th>Data adaugarii</th>
                         <th>
-                            <label style="padding-bottom: 0px"><input type="checkbox" id="select_all">&nbsp;&nbsp;Selecteaza tot</label>
+                            <label style="padding-bottom: 0px"><input type="checkbox" id="select_all" checked=''>&nbsp;&nbsp;Selecteaza tot</label>
                         </th>
                     </tr>
                     </thead>
@@ -83,7 +83,7 @@ include_once('functions.php')
 
 <script>
     $('#btn_Sterge').click(function () {
-       var ids = $('input:checkbox:checked').not(this).map(function () {
+       var ids = $('input:checkbox:checked').map(function () {
            return this.value;
        }).get();
         alert(ids);
