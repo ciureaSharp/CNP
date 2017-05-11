@@ -7,7 +7,10 @@
  */
 
 include_once ("functions.php");
-
+if (isset($_POST['action']) && !empty($_POST['action'])) {
+    $function = $_POST['action'];
+    return $function();
+}
 function add_user_data()
 {
     global $conn;

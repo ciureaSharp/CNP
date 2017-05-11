@@ -8,10 +8,7 @@
 $conn = new mysqli('127.0.0.1', 'digitala_gabi', '133admin133!', 'digitala_dl_gabi');
 global $conn;
 
-if (isset($_POST['action']) && !empty($_POST['action'])) {
-    $function = $_POST['action'];
-    return $function();
-}
+
 
 function get_users()
 {
@@ -39,4 +36,5 @@ function get_users()
 
 function delete_users(){
     $ids = $_POST['id_delete'];
+    return $ids;
 }

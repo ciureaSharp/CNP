@@ -99,7 +99,17 @@ include_once('functions.php')
     var ids;
     $('#btn_confirma_stergere').click(function (e) {
         e.preventDefault();
-        alert(ids);
+        $.ajax({
+            url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+            data: {
+                action: 'delete_users',
+                id_delete: ids
+            },
+            type: 'post',
+            success: function (data) {
+                alert(data);
+            }
+        });
     });
 
     $('#btn_renunta_stergere').click(function (e) {
