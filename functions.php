@@ -9,7 +9,6 @@ $conn = new mysqli('127.0.0.1', 'digitala_gabi', '133admin133!', 'digitala_dl_ga
 global $conn;
 
 
-
 function get_users()
 {
     global $conn;
@@ -34,13 +33,15 @@ function get_users()
     }
 }
 
-function delete_users(){
-    $ids = implode(',',$_POST['id_delete']);
+function delete_users()
+{
+    $ids = implode(',', $_POST['id_delete']);
     global $conn;
-    if($stmt = $conn->prepare('DELETE FROM user_data WHERE id IN('.$ids.')')){
+    if ($stmt = $conn->prepare('DELETE FROM user_data WHERE id IN(' . $ids . ')')) {
         $stmt->execute();
-        return $stmt->affected_rows;
+        $ret = $stmt->affected_rows;
+        echo $ret;
     } else {
-        return $conn->error;
+        echo $conn->error;
     }
 }
