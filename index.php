@@ -107,9 +107,13 @@ include_once('functions.php')
         var ids = $('input[name=user_id]:checkbox:checked').map(function () {
             return this.value;
         }).get();
-        $("#main_result").addClass("alert-warning");
-        $('#main_result_text').text("Esti sigur ca vrei sa stergi userii cu id-urile: " + ids + "?");
-        $('#grup_butoane_confirmare').removeClass('hidden');
+        if (ids.length > 0) {
+            $("#main_result").addClass("alert-warning");
+            $('#main_result_text').text("Esti sigur ca vrei sa stergi userii cu id-urile: " + ids + "?");
+            $('#grup_butoane_confirmare').removeClass('hidden');
+        } else {
+            alert("Nu ai selectat useri de sters");
+        }
     });
 
     $('#select_all').click(function () {
