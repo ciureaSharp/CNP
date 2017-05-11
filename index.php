@@ -71,19 +71,18 @@ ini_set('max_execution_time', 300);
     $('#btn_insereaza').click(function (e) {
         e.preventDefault();
         var cnp = $('#main_result_text').text();
-        alert(cnp);
-//        $('#rez').text(cnp);
-//        if (cnp == "") {
-//            alert('CNP nu exista. Apasa "Genereaza cnp".');
-//        } else {
-//            $.ajax({
-//                url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
-//                data: {
-//                    action: 'get_cnp_info',
-//                    cnp: cnp
-//                },
-//                type: 'post',
-//                success: function (data) {
+        if (cnp == "") {
+            alert('CNP nu exista. Apasa "Genereaza cnp".');
+        } else {
+            $.ajax({
+                url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+                data: {
+                    action: 'get_cnp_info',
+                    cnp: cnp
+                },
+                type: 'post',
+                success: function (data) {
+                    alert(data);
 //                    data = $.parseJSON(data);
 //                    var sex = data['sex'];
 //                    var data_nasterii = data['data_nasterii'];
@@ -108,9 +107,9 @@ ini_set('max_execution_time', 300);
 //                            }
 //                        }
 //                    });
-//                }
-//            });
-//        }
+                }
+            });
+        }
     });
 </script>
 
