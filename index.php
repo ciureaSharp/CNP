@@ -18,6 +18,7 @@ ini_set('max_execution_time', 300);
         .table-bordered {
             margin-top: 100px;
             width: 50%;
+            right: 50%;
         }
         th{
             text-align: center;
