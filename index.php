@@ -51,7 +51,7 @@ include_once('functions.php')
                         <th>CNP</th>
                         <th>Data adaugarii</th>
                         <th>
-                            <label><input type="checkbox" id="select_all">Selecteaza tot</label>
+                            <label><input type="checkbox" id="select_all">&nbsp;&nbsp;Selecteaza tot</label>
                         </th>
                     </tr>
                     </thead>
