@@ -14,55 +14,46 @@ ini_set('max_execution_time', 300);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<style>
-    #buttons {
-        width: 50%;
-        margin-top: 15px;
-        margin-left: 15px;
-    }
-    #span {
-        width: 50%;
-        margin-top: 5px;
-        margin-left: 15px;
-    }
-</style>
 
 </head>
 <body>
 
-<div id="buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
-    <div class="btn-group" role="group">
-        <button id="btn_genereaza" class="btn btn-default" type="submit">Genereaza</button>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="buttons" class="btn-group btn-group-justified" role="group" aria-label="...">
+                <div class="btn-group" role="group">
+                    <button id="btn_genereaza" class="btn btn-default" type="submit">Genereaza</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="btn_verifica" class="btn btn-default" type="submit">Insereaza</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button id="btn_sterge" class="btn btn-default" type="submit">Sterge</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="btn-group" role="group">
-        <button id="btn_verifica"class="btn btn-default" type="submit">Insereaza</button>
-    </div>
-    <div class="btn-group" role="group">
-        <button id="btn_sterge" class="btn btn-default" type="submit">Sterge</button>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="tabel">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Data nasterii</th>
+                        <th>Varsta</th>
+                        <th>Locul nasterii</th>
+                        <th>CNP</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
-<div id="span" class="alert alert-danger" role="alert">
 
-</div>
-
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Data nasterii</th>
-            <th>Varsta</th>
-            <th>Locul nasterii</th>
-            <th>CNP</th>
-        </tr>
-    </thead>
-</table>
-
-<script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous">
-</script>
 <script>
     $('#btn_genereaza').click(function (e) {
         e.preventDefault();
@@ -92,7 +83,7 @@ ini_set('max_execution_time', 300);
                     var locul_nasterii = data['locul_nasterii'];
                     $.ajax({
                         url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
-                        data:{
+                        data: {
                             action: 'add_user_data',
                             cnp: cnp,
                             sex: sex,
@@ -101,10 +92,10 @@ ini_set('max_execution_time', 300);
                             locul_nasterii: locul_nasterii
                         },
                         type: 'post',
-                        success: function(data){
-                            if($.isNumeric(data)){
+                        success: function (data) {
+                            if ($.isNumeric(data)) {
                                 alert('success');
-                            }else {
+                            } else {
                                 alert(data);
                             }
                         }
