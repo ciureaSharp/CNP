@@ -36,6 +36,7 @@ function get_users()
 
 function delete_users(){
     $ids = $_POST['id_delete'];
+    var_dump($ids);
     global $conn;
     if($stmt = $conn->prepare('DELETE FROM user_data WHERE id IN(?)')){
         $stmt->bind_param('s', $ids);
