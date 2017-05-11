@@ -26,7 +26,7 @@ ini_set('max_execution_time', 300);
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>id</th>
+            <th align="center">id</th>
             <th>sex</th>
             <th>data_nasterii</th>
             <th>varsta</th>
