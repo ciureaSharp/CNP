@@ -102,6 +102,7 @@ include_once('functions.php')
         }).get();
         $("#main_result").addClass("alert-warning");
         $('#main_result_text').text("Esti sigur ca vrei sa stergi userii cu id-urile: " + ids + "?");
+        $('#grup_butoane_confirmare').removeClass('hidden');
     });
 
     $('#select_all').click(function () {
