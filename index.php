@@ -34,22 +34,25 @@ ini_set('max_execution_time', 300);
 </head>
 <body>
 
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>sex</th>
-            <th>data nasterii</th>
-            <th>varsta</th>
-            <th>locul nasterii</th>
-            <th>CNP</th>
-        </tr>
-    </thead>
-</table>
+<div id="table-buttons" class="inline">
+    <div id="table">
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>sex</th>
+                    <th>data nasterii</th>
+                    <th>varsta</th>
+                    <th>locul nasterii</th>
+                    <th>CNP</th>
+                </tr>
+            </thead>
+        </table>
+        <div id="buttons">
+            <button id="btn_genereaza" class="btn btn-primary" type="submit"></button>
+        </div>
+    </div>
 
-<div id="button">
-    <button id="btn_genereaza" type="submit" class="btn btn-primary">Genereaza</button>
-    <input id="cnp" />
 </div>
 
 <script
