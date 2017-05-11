@@ -89,7 +89,8 @@ include_once('functions.php')
         console.log(ids);
     });
 
-    $('#select_all').click(function () {
+    $('#select_all').click(function (e) {
+        e.preventDefault();
         $('input:checkbox').prop('checked', this.checked);
     });
 
