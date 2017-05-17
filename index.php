@@ -127,7 +127,7 @@ function verifica_input(i) {
     } else {
         return false;
     }
-}
+}//mujereeeeeezzz
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
         var inputCNP = verifica_input($.('#manual_input').val());
