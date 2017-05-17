@@ -123,11 +123,11 @@ include_once('functions.php')
     var ids;
     $('#manual_input').change(function () {
        var inputCNP = $('#manual_input').val();
-       // $.('#btn_manual_input').prop('disabled', false);
-        alert(inputCNP);
+        $('#btn_manual_input').prop('disabled', false);
     });
     $('#btn_manual_input').click(function (e) {
-        e.preventDefault();
+        e.preventDefault($('#manual_input').val(););
+        alert();
     });
 
     $('#btn_confirma_stergere').click(function (e) {
