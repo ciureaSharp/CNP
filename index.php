@@ -96,7 +96,6 @@ include_once('functions.php')
 
 <div id="modal_insereaza" class="modal fade" role="dialog">
     <div class="modal-dialog">
-
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -116,7 +115,6 @@ include_once('functions.php')
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
-
     </div>
 </div>
 
