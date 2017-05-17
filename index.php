@@ -110,14 +110,15 @@ include_once('functions.php')
                 </div>
                 <div class="col-md-6">
                     <button id="manual_send_cnp" class="btn btn-success pull-left">OK</button>
-                    </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
-
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
     </div>
+
+</div>
 </div>
 
 <script>
