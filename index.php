@@ -121,12 +121,13 @@ include_once('functions.php')
 
 <script>
     var ids;
+
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
-        var inputCNP = $.('#manual_input').val();
-        if(inputCNP){
-            $(this).removeClass('disabled');
-            //alert (inputCNP);
+        var inputCNP = $('#manual_input').val();
+        if($.isNumeric(inputCNP) || inputCNP.length() != 13){
+            $.(this).removeClass('disabled');
+            alert (inputCNP);
         } else {
             alert ("Formatul CNP ului este gresit");
         }
