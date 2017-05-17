@@ -103,9 +103,14 @@ include_once('functions.php')
                 <h4 class="modal-title">Insereaza manual cnp-ul</h4>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <input id="manual_input" type="text" class="form-control" />
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input id="manual_input" type="text" class="form-control"/>
+                    </div>
                 </div>
+                <div class="col-md-6">
+                    <button id="manual_send_cnp" class="btn btn-success pull-left">OK</button>
+                    </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -127,7 +132,7 @@ include_once('functions.php')
             },
             type: 'post',
             success: function (data) {
-                if(data>0){
+                if (data > 0) {
                     $("#main_result").addClass("alert-success");
                     $('#main_result_text').text("Id-urile: " + ids + " au fost sterse!");
                     window.setTimeout(function () {
