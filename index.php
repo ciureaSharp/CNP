@@ -125,9 +125,9 @@ include_once('functions.php')
        var inputCNP = $('#manual_input').val();
         $('#btn_manual_input').prop('disabled', false);
     });
+
     $('#btn_manual_input').click(function (e) {
-        e.preventDefault($('#manual_input').val(););
-        alert();
+        alert($('#manual_input').val());
     });
 
     $('#btn_confirma_stergere').click(function (e) {
