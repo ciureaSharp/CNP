@@ -23,7 +23,7 @@ include_once('functions.php')
     <div class="row" style="margin: 50px 0px 50px 0px">
         <div class="col-md-12">
             <div class="col-md-4">
-                <button id="btn_genereaza" class="btn btn-success btn-lg btn-block" type="submit">Genereaza</button>
+                <button id="btn_genereaza" class="btn btn-success btn-lg btn-block" type="submit">Genereazaa</button>
             </div>
             <div class="col-md-4">
                 <button id="btn_insereaza" class="btn btn-info btn-lg btn-block" type="submit">Insereaza</button>
