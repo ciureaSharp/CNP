@@ -122,8 +122,8 @@ include_once('functions.php')
 <script>
     var ids;
     $.('#manual_input').blur(function () {
-       var inputCNP = $.(this).val();
-        $.('#btn_manual_input').prop('disabled', false);
+       var inputCNP = $.('#manual_input').val();
+       // $.('#btn_manual_input').prop('disabled', false);
         alert(inputCNP);
     });
     $('#btn_manual_input').click(function (e) {
