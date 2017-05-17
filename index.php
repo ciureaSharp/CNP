@@ -95,7 +95,6 @@ include_once('functions.php')
 </div>
 
 
-
 <div id="modal_insereaza" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -113,11 +112,12 @@ include_once('functions.php')
                     <button id="manual_send_cnp" class="btn btn-success pull-left">OK</button>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
+</div>
 </div>
 
 <script>
