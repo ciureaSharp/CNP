@@ -123,9 +123,8 @@ include_once('functions.php')
     var ids;
     $('#manual_input').change(function () {
        var inputCNP = $('#manual_input').val();
-        if($.isNumeric(inputCNP)){
-          //  $('#btn_manual_input').prop('disabled', false);
-            alert('plm');
+        if(inputCNP.length != 13){
+            $('#btn_manual_input').prop('disabled', false);
         }
 
     });
