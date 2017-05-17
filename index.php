@@ -105,7 +105,7 @@ include_once('functions.php')
             <div class="modal-body">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input id="manual_input" type="text" class="form-control"/>
+                        <input id="manual_input" type="text" class="form-control" type="text"/>
                     </div>
                 </div>
                 <div class="col-md-6">
