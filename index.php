@@ -138,7 +138,7 @@ include_once('functions.php')
     });
 
     $('#btn_manual_input').click(function (e) {
-        alert($('#manual_input').val());
+     //   alert($('#manual_input').val());
     });
 
     $('#btn_confirma_stergere').click(function (e) {
