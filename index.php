@@ -123,7 +123,10 @@ include_once('functions.php')
     var ids;
     $('#manual_input').change(function () {
        var inputCNP = $('#manual_input').val();
-        $('#btn_manual_input').prop('disabled', false);
+        if($.isNumeric(inputCNP)){
+            $('#btn_manual_input').prop('disabled', false);
+        }
+
     });
 
     $('#btn_manual_input').click(function (e) {
