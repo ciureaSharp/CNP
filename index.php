@@ -121,19 +121,12 @@ include_once('functions.php')
 
 <script>
     var ids;
-function verifica_input(i) {
-    if($.isNumeric(i)){
-        return true;
-    } else {
-        return false;
-    }
-}//mujereeeeeezzz
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
-        var inputCNP = verifica_input($.('#manual_input').val());
+        var inputCNP = $.('#manual_input').val();
         if(inputCNP){
             $(this).removeClass('disabled');
-            alert (inputCNP);
+            //alert (inputCNP);
         } else {
             alert ("Formatul CNP ului este gresit");
         }
