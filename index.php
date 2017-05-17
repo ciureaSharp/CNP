@@ -109,7 +109,7 @@ include_once('functions.php')
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <button id="manual_send_cnp" class="btn btn-success pull-left">OK</button>
+                    <button id="btn_manual_input" class="btn btn-success pull-left">OK</button>
                 </div>
             </div>
         </div>
@@ -122,6 +122,13 @@ include_once('functions.php')
 
 <script>
     var ids;
+
+    $('#btn_manual_input').click(function (e) {
+        e.preventDefault();
+        var inputCNP = $('#manual_input').text();
+        alert (inputCNP);
+    });
+
     $('#btn_confirma_stergere').click(function (e) {
         e.preventDefault();
         $.ajax({
