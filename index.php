@@ -94,12 +94,14 @@ include_once('functions.php')
     </div>
 </div>
 
+
+
 <div id="modal_insereaza" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Insereaza manual cnp-ul</h4>
+                <h4 class="modal-title">Insereaza CNP manual</h4>
             </div>
             <div class="modal-body">
                 <div class="col-md-6">
@@ -107,7 +109,7 @@ include_once('functions.php')
                         <input id="manual_input" type="text" class="form-control"/>
                     </div>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-6">
                     <button id="manual_send_cnp" class="btn btn-success pull-left">OK</button>
                 </div>
             </div>
