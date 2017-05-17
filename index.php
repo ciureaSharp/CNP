@@ -105,19 +105,18 @@ include_once('functions.php')
             <div class="modal-body">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input id="manual_input" type="text" class="form-control" type="text" />
+                        <input id="manual_input" type="text" class="form-control" type="text"/>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <button id="btn_manual_input" class="btn btn-success pull-left">OK</button>
+                    <button id="btn_manual_input" class="btn btn-success pull-left" disabled>OK</button>
                 </div>
             </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 <script>
@@ -126,7 +125,12 @@ include_once('functions.php')
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
         var inputCNP = $('#manual_input').val();
-        alert (inputCNP);
+        if($.isNumeric(inputCNP) || inputCNP.byteLength != 13){
+            alert (inputCNP);
+        } else {
+            alert ("Formatul CNP ului este gresit");
+        }
+
     });
 
     $('#btn_confirma_stergere').click(function (e) {
