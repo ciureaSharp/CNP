@@ -124,12 +124,6 @@ include_once('functions.php')
     $('#manual_input').change(function () {
         var inputCNP = $('#manual_input').val();
         $.ajax({
-            url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
-            data: {
-                action: 'delete_users',
-                id_delete: ids
-            },
-            type: 'post',
             beforesubmit: function(inputCNP){
                 if($.isNumeric(inputCNP)){
                     alert('alea');
