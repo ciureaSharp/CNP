@@ -109,7 +109,7 @@ include_once('functions.php')
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <button id="btn_manual_input" class="btn btn-success pull-left disabled">OK</button>
+                    <button id="btn_manual_input" class="btn btn-success pull-left" disabled>OK</button>
                 </div>
             </div>
             <div class="modal-footer">
@@ -121,16 +121,13 @@ include_once('functions.php')
 
 <script>
     var ids;
-
+    $.('#manual_input').blur(function () {
+       var inputCNP = $.(this).val();
+        $.('#btn_manual_input').prop('disabled', false);
+        alert(inputCNP);
+    });
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
-        var inputCNP = $('#manual_input').val();
-        if($.isNumeric(inputCNP)){
-          //  $.(this).removeClass('disabled');
-            alert (inputCNP);
-        } else {
-            alert ("Formatul CNP ului este gresit");
-        }
     });
 
     $('#btn_confirma_stergere').click(function (e) {
