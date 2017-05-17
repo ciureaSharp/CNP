@@ -124,7 +124,8 @@ include_once('functions.php')
     $('#manual_input').change(function () {
        var inputCNP = $('#manual_input').val();
         if($.isNumeric(inputCNP)){
-            $('#btn_manual_input').prop('disabled', false);
+          //  $('#btn_manual_input').prop('disabled', false);
+            alert('plm');
         }
 
     });
