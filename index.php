@@ -121,11 +121,17 @@ include_once('functions.php')
 
 <script>
     var ids;
-
+function verifica_input(i) {
+    if($.isNumeric(i)){
+        return true;
+    } else {
+        return false;
+    }
+}
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
-        var inputCNP = $('#manual_input').val();
-        if($.isNumeric(inputCNP)){
+        var inputCNP = verifica_input($.('#manual_input').val());
+        if(inputCNP){
             $(this).removeClass('disabled');
             alert (inputCNP);
         } else {
