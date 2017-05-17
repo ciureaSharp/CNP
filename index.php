@@ -123,7 +123,7 @@ include_once('functions.php')
     var ids;
     $('#manual_input').change(function () {
        var inputCNP = $('#manual_input').val();
-        if(inputCNP.length != 13){
+        if(inputCNP.length() != 13){
             $('#btn_manual_input').prop('disabled', false);
         }
 
