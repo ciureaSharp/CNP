@@ -122,7 +122,7 @@ include_once('functions.php')
 <script>
     var ids;
     $('#manual_input').change(function () {
-       var inputCNP = $.('#manual_input').val();
+       var inputCNP = $('#manual_input').val();
        // $.('#btn_manual_input').prop('disabled', false);
         alert(inputCNP);
     });
