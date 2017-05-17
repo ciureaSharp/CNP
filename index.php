@@ -94,6 +94,24 @@ include_once('functions.php')
     </div>
 </div>
 
+<div id="modal_insereaza" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Insereaza manual cnp-ul</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 <script>
     var ids;
@@ -156,7 +174,7 @@ include_once('functions.php')
         e.preventDefault();
         var cnp = $('#main_result_text').text();
         if (cnp == "") {
-            alert('CNP nu exista. Apasa "Genereaza cnp".');
+            $("#modal_insereaza").modal('show');
         } else {
             $.ajax({
                 url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
