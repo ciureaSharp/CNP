@@ -125,14 +125,12 @@ include_once('functions.php')
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
         var inputCNP = $('#manual_input').val();
-//        if($.isNumeric(inputCNP)){
-//            $.(this).removeClass('disabled');
-//            alert (inputCNP);
-//        } else {
-//            alert ("Formatul CNP ului este gresit");
-//        }
-        alert (inputCNP);
-
+        if($.isNumeric(inputCNP)){
+          //  $.(this).removeClass('disabled');
+            alert (inputCNP);
+        } else {
+            alert ("Formatul CNP ului este gresit");
+        }
     });
 
     $('#btn_confirma_stergere').click(function (e) {
