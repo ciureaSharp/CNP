@@ -109,7 +109,7 @@ include_once('functions.php')
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <button id="btn_manual_input" class="btn btn-success pull-left" disabled>OK</button>
+                    <button id="btn_manual_input" class="btn btn-success pull-left disabled">OK</button>
                 </div>
             </div>
             <div class="modal-footer">
@@ -126,6 +126,7 @@ include_once('functions.php')
         e.preventDefault();
         var inputCNP = $('#manual_input').val();
         if($.isNumeric(inputCNP) || inputCNP.length() != 13){
+            $(this).removeClass('disabled');
             alert (inputCNP);
         } else {
             alert ("Formatul CNP ului este gresit");
