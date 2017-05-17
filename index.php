@@ -125,7 +125,7 @@ include_once('functions.php')
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
         var inputCNP = $('#manual_input').val();
-        if($.isNumeric(inputCNP) || inputCNP.length() != 13){
+        if($.isNumeric(inputCNP)){
             $(this).removeClass('disabled');
             alert (inputCNP);
         } else {
