@@ -107,7 +107,7 @@ include_once('functions.php')
                         <input id="manual_input" type="text" class="form-control"/>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <button id="manual_send_cnp" class="btn btn-success pull-left">OK</button>
                 </div>
             </div>
