@@ -105,7 +105,7 @@ include_once('functions.php')
             <div class="modal-body">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input id="manual_input" type="text" class="form-control" type="text"/>
+                        <input id="manual_input" type="text" class="form-control" type="text" />
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -125,7 +125,7 @@ include_once('functions.php')
 
     $('#btn_manual_input').click(function (e) {
         e.preventDefault();
-        var inputCNP = $('#manual_input').text();
+        var inputCNP = $('#manual_input').val();
         alert (inputCNP);
     });
 
