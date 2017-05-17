@@ -130,20 +130,17 @@ include_once('functions.php')
                 id_delete: ids
             },
             type: 'post',
-            beforeSubmit: function (inputCNP) {
-                if ($.isNumeric(inputCNP)) {
-                    alert('PAM');
+            beforesubmit: function(inputCNP){
+                if($.isNumeric(inputCNP)){
+                    alert('alea');
+                } else {
+                    alert('celelalte');
                 }
-                else {
-                    alert('altceva');
-                }
-
             },
             success: function (data) {
-                alert('OKAY');
+               alert('ailante');
             }
-        )}
-
+        });
     });
 
     $('#btn_manual_input').click(function (e) {
