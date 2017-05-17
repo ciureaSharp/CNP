@@ -109,7 +109,7 @@ include_once('functions.php')
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <button id="btn_manual_input" class="btn btn-success pull-left" disabled>OK</button>
+                    <button id="btn_manual_input" class="btn btn-success pull-left">OK</button>
                 </div>
             </div>
             <div class="modal-footer">
@@ -122,12 +122,30 @@ include_once('functions.php')
 <script>
     var ids;
     $('#manual_input').change(function () {
-       var inputCNP = $('#manual_input').val();
-        if($(this.length()) == 13){
-            $('#btn_manual_input').prop('enabled', true);
-        }
+        var inputCNP = $('#manual_input').val();
+        $.ajax({           url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+            data: {
+                action: 'delete_users',
+                id_delete: ids
+            },
+            type: 'post',
+            beforeSubmit: function (inputCNP) {
+                if ($.isNumeric(inputCNP)) {
+                    alert('PAM');
+                }
+                else {
+                    alert('altceva');
+                }
 
-    });
+            },
+            success: function (data) {
+                alert('OKAY');
+            }
+        )
+    }
+
+    })
+    ;
 
     $('#btn_manual_input').click(function (e) {
         alert($('#manual_input').val());
