@@ -123,7 +123,8 @@ include_once('functions.php')
     var ids;
     $('#manual_input').change(function () {
         var inputCNP = $('#manual_input').val();
-        $.ajax({           url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+        $.ajax({
+            url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
             data: {
                 action: 'delete_users',
                 id_delete: ids
@@ -141,11 +142,9 @@ include_once('functions.php')
             success: function (data) {
                 alert('OKAY');
             }
-        )
-    }
+        )}
 
-    })
-    ;
+    });
 
     $('#btn_manual_input').click(function (e) {
         alert($('#manual_input').val());
