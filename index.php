@@ -127,8 +127,10 @@ include_once('functions.php')
 
     $('#btn_manual_input').click(function (e) {
         var manual_input = $('#manual_input').val();
-        alert(manual_input.length);
-        //if()
+        alert($.isNumeric(manual_input));
+//        if(manual_input.length != 13){
+//            alert()
+//        }
     });
 
     $('#btn_confirma_stergere').click(function (e) {
