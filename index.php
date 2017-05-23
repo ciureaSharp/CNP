@@ -262,7 +262,7 @@ include_once('functions.php')
                     },
                     type: 'post',
                     success: function (data) {
-                        data = $.parseJSON(data);
+                        data = $.parseJSON(data); //Transformam obiectul JSON apelat de functie intr un array
                         var sex = data['sex'];
                         var data_nasterii = data['data_nasterii'];
                         var varsta = data['varsta'];
