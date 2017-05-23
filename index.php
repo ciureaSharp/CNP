@@ -126,7 +126,9 @@ include_once('functions.php')
 
 
     $('#btn_manual_input').click(function (e) {
-          alert($('#manual_input').val());
+        var manual_input = $('#manual_input').val();
+        alert(manual_input.length);
+        //if()
     });
 
     $('#btn_confirma_stergere').click(function (e) {
