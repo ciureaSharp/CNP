@@ -103,13 +103,15 @@ include_once('functions.php')
                 <h4 class="modal-title">Insereaza CNP manual</h4>
             </div>
             <div class="modal-body">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input id="manual_input" type="text" class="form-control" type="text"/>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input id="manual_input" type="text" class="form-control" type="text"/>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <button id="btn_manual_input" class="btn btn-success pull-left">OK</button>
+                    <div class="col-md-6">
+                        <button id="btn_manual_input" class="btn btn-success pull-left">OK</button>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -124,21 +126,21 @@ include_once('functions.php')
     $('#manual_input').change(function () {
         var inputCNP = $('#manual_input').val();
         $.ajax({
-            beforesubmit: function(inputCNP){
-                if($.isNumeric(inputCNP)){
+            beforesubmit: function (inputCNP) {
+                if ($.isNumeric(inputCNP)) {
                     alert('alea');
                 } else {
                     alert('celelalte');
                 }
             },
             success: function (data) {
-               alert('ailante');
+                alert('ailante');
             }
         });
     });
 
     $('#btn_manual_input').click(function (e) {
-     //   alert($('#manual_input').val());
+        //   alert($('#manual_input').val());
     });
 
     $('#btn_confirma_stergere').click(function (e) {
