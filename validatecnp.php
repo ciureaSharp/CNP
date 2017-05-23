@@ -158,7 +158,7 @@ function validare($cnp = '')
     if ($cnp = '') {
         $cnp = $_POST['cnp'];
     }
-    
+    echo $cnp;die();
     $cnp = (string)$cnp;
     $key = str_split(279146358279);
     $key_control = $cnp[12];
