@@ -141,18 +141,19 @@ include_once('functions.php')
                     },
                     type: 'post',
                     success: function (data) {
-                        if (data) {
-                            $("#main_result").removeClass('alert-success');
-                            $("#main_result").addClass('alert-info');
-                            $("#main_result_text").text("Inserat cu succes");
-                            window.setTimeout(function () {
-                                location.reload();
-                            }, 2000);
-                        } else {
-                            $("#main_result").removeClass('alert-success');
-                            $("#main_result").addClass('alert-danger');
-                            $("#main_result_text").text(data);
-                        }
+//                        if (data) {
+//                            $("#main_result").removeClass('alert-success');
+//                            $("#main_result").addClass('alert-info');
+//                            $("#main_result_text").text("Inserat cu succes");
+//                            window.setTimeout(function () {
+//                                location.reload();
+//                            }, 2000);
+//                        } else {
+//                            $("#main_result").removeClass('alert-success');
+//                            $("#main_result").addClass('alert-danger');
+//                            $("#main_result_text").text(data);
+//                        }
+                        alert(data);
                     }
                 });
             }

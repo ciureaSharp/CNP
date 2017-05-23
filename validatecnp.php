@@ -174,7 +174,7 @@ function validare($cnp = '')
         $check = 1;
     }
     if ($key_control == $check) {
-        return true;
+        echo 'hau';
     } else {
         return false;
     }
