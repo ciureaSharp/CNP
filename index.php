@@ -115,7 +115,7 @@ include_once('functions.php')
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" id="btn_manual_close" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -130,6 +130,10 @@ include_once('functions.php')
         if (manual_input.length != 13 || !$.isNumeric(manual_input)) {
             alert('Format incorect, reincearca!');
         }
+    });
+    $('#btn_manual_close').click(function (e) {
+        var manual_input = $('#manual_input').val('');
+
     });
 
     $('#btn_confirma_stergere').click(function (e) {
