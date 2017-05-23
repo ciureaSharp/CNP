@@ -122,122 +122,124 @@ include_once('functions.php')
 </div>
 
 <script>
-    var ids;
+    $(document).ready(function () {
+        var ids;
 
 
-    $('#btn_manual_input').click(function (e) {
-        var manual_input = $('#manual_input').val();
-        if (manual_input.length != 13 || !$.isNumeric(manual_input)) {
-            alert('Format incorect, reincearca!');
-        }
-    });
-    $('#btn_manual_close').click(function (e) {
-        var manual_input = $('#manual_input').val('');
-    });
-
-    $('#btn_confirma_stergere').click(function (e) {
-        e.preventDefault();
-        $.ajax({
-            url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
-            data: {
-                action: 'delete_users',
-                id_delete: ids
-            },
-            type: 'post',
-            success: function (data) {
-                if (data > 0) {
-                    $("#main_result").addClass("alert-success");
-                    $('#main_result_text').text("Id-urile: " + ids + " au fost sterse!");
-                    window.setTimeout(function () {
-                        location.reload();
-                    }, 3000);
-                } else {
-                    alert(data);
-                }
+        $('#btn_manual_input').click(function (e) {
+            var manual_input = $('#manual_input').val();
+            if (manual_input.length != 13 || !$.isNumeric(manual_input)) {
+                alert('Format incorect, reincearca!');
             }
         });
-    });
-
-    $('#btn_renunta_stergere').click(function (e) {
-        e.preventDefault();
-        $('#select_all').trigger('click');
-        $('#select_all').trigger('click');
-        location.reload();
-    });
-
-    $('#btn_Sterge').click(function () {
-        ids = $('input[name=user_id]:checkbox:checked').map(function () {
-            return this.value;
-        }).get();
-        if (ids.length > 0) {
-            $("#main_result").addClass("alert-warning");
-            $('#main_result_text').text("Esti sigur ca vrei sa stergi userii cu id-urile: " + ids + "?");
-            $('#grup_butoane_confirmare').removeClass('hidden');
-        } else {
-            alert("Nu ai selectat useri de sters");
-        }
-    });
-
-    $('#select_all').click(function () {
-        $('input:checkbox').not(this).prop('checked', this.checked);
-    });
-
-    $('#btn_genereaza').click(function (e) {
-        e.preventDefault();
-        $.post('randomcnp.php', function (data) {
-            $("#main_result").addClass("alert-success");
-            $('#main_result_text').text(data);
+        $('#btn_manual_close').click(function (e) {
+            var manual_input = $('#manual_input').val('');
         });
-    });
 
-    $('#btn_insereaza').click(function (e) {
-        e.preventDefault();
-        var cnp = $('#main_result_text').text();
-        if (cnp == "") {
-            $("#modal_insereaza").modal('show');
-        } else {
+        $('#btn_confirma_stergere').click(function (e) {
+            e.preventDefault();
             $.ajax({
                 url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
                 data: {
-                    action: 'get_cnp_info',
-                    cnp: cnp
+                    action: 'delete_users',
+                    id_delete: ids
                 },
                 type: 'post',
                 success: function (data) {
-                    data = $.parseJSON(data);
-                    var sex = data['sex'];
-                    var data_nasterii = data['data_nasterii'];
-                    var varsta = data['varsta'];
-                    var locul_nasterii = data['locul_nasterii'];
-                    $.ajax({
-                        url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
-                        data: {
-                            action: 'add_user_data',
-                            cnp: cnp,
-                            sex: sex,
-                            data_nasterii: data_nasterii,
-                            varsta: varsta,
-                            locul_nasterii: locul_nasterii
-                        },
-                        type: 'post',
-                        success: function (data) {
-                            if ($.isNumeric(data)) {
-                                $("#main_result").removeClass('alert-success');
-                                $("#main_result").addClass('alert-info');
-                                $("#main_result_text").text("Inserat cu succes");
-                                window.setTimeout(function () {
-                                    location.reload();
-                                }, 2000);
-                            } else {
-                                $("#main_result").removeClass('alert-success');
-                                $("#main_result").addClass('alert-danger');
-                                $("#main_result_text").text(data);
-                            }
-                        }
-                    });
+                    if (data > 0) {
+                        $("#main_result").addClass("alert-success");
+                        $('#main_result_text').text("Id-urile: " + ids + " au fost sterse!");
+                        window.setTimeout(function () {
+                            location.reload();
+                        }, 3000);
+                    } else {
+                        alert(data);
+                    }
                 }
             });
-        }
+        });
+
+        $('#btn_renunta_stergere').click(function (e) {
+            e.preventDefault();
+            $('#select_all').trigger('click');
+            $('#select_all').trigger('click');
+            location.reload();
+        });
+
+        $('#btn_Sterge').click(function () {
+            ids = $('input[name=user_id]:checkbox:checked').map(function () {
+                return this.value;
+            }).get();
+            if (ids.length > 0) {
+                $("#main_result").addClass("alert-warning");
+                $('#main_result_text').text("Esti sigur ca vrei sa stergi userii cu id-urile: " + ids + "?");
+                $('#grup_butoane_confirmare').removeClass('hidden');
+            } else {
+                alert("Nu ai selectat useri de sters");
+            }
+        });
+
+        $('#select_all').click(function () {
+            $('input:checkbox').not(this).prop('checked', this.checked);
+        });
+
+        $('#btn_genereaza').click(function (e) {
+            e.preventDefault();
+            $.post('randomcnp.php', function (data) {
+                $("#main_result").addClass("alert-success");
+                $('#main_result_text').text(data);
+            });
+        });
+
+        $('#btn_insereaza').click(function (e) {
+            e.preventDefault();
+            var cnp = $('#main_result_text').text();
+            if (cnp == "") {
+                $("#modal_insereaza").modal('show');
+            } else {
+                $.ajax({
+                    url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+                    data: {
+                        action: 'get_cnp_info',
+                        cnp: cnp
+                    },
+                    type: 'post',
+                    success: function (data) {
+                        data = $.parseJSON(data);
+                        var sex = data['sex'];
+                        var data_nasterii = data['data_nasterii'];
+                        var varsta = data['varsta'];
+                        var locul_nasterii = data['locul_nasterii'];
+                        $.ajax({
+                            url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+                            data: {
+                                action: 'add_user_data',
+                                cnp: cnp,
+                                sex: sex,
+                                data_nasterii: data_nasterii,
+                                varsta: varsta,
+                                locul_nasterii: locul_nasterii
+                            },
+                            type: 'post',
+                            success: function (data) {
+                                if ($.isNumeric(data)) {
+                                    $("#main_result").removeClass('alert-success');
+                                    $("#main_result").addClass('alert-info');
+                                    $("#main_result_text").text("Inserat cu succes");
+                                    window.setTimeout(function () {
+                                        location.reload();
+                                    }, 2000);
+                                } else {
+                                    $("#main_result").removeClass('alert-success');
+                                    $("#main_result").addClass('alert-danger');
+                                    $("#main_result_text").text(data);
+                                }
+                            }
+                        });
+                    }
+                });
+            }
+        });
     });
 </script>
 
