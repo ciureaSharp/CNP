@@ -106,7 +106,7 @@ include_once('functions.php')
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input id="manual_input" type="text" class="form-control" type="text"/>
+                            <input id="manual_input" type="text" class="form-control" type="text" autocomplete="off"/>
                         </div>
                     </div>
                     <div class="col-md-6">
