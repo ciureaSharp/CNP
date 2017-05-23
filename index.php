@@ -142,7 +142,8 @@ include_once('functions.php')
                     type: 'post',
                     success: function (data) {
                         alert(data);
-                    });
+                    }
+                });
             }
         });
         $('#btn_manual_close').click(function (e) {
