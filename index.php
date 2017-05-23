@@ -1,7 +1,6 @@
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-ini_set('max_execution_time', 300);
 include_once('functions.php')
 ?>
 
@@ -219,8 +218,8 @@ include_once('functions.php')
 
         $('#btn_renunta_stergere').click(function (e) {
             e.preventDefault();
-            $('#select_all').trigger('click');
-            $('#select_all').trigger('click');
+            $("input[name='user_id']:checkbox").prop('checked', false);
+            $("#select_all").prop('checked', false);
             location.reload();
         });
 
