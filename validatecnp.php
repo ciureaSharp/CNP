@@ -153,7 +153,7 @@ function get_cnp_info()
     echo json_encode($ret);
 
 }
-
+//TODO : get data si verificare validitate
 function validare($cnp)
 {
     $cnp = (string)$cnp;
@@ -177,6 +177,8 @@ function validare($cnp)
         return false;
     }
 }
+
+//TODO : get data si verificare validitate
 
 function validare_manual_input()
 {
