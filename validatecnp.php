@@ -158,6 +158,7 @@ function validare($cnp = '')
     if ($cnp = '') {
         $cnp = $_POST['cnp'];
     }
+    
     $cnp = (string)$cnp;
     $key = str_split(279146358279);
     $key_control = $cnp[12];
@@ -174,14 +175,8 @@ function validare($cnp = '')
         $check = 1;
     }
     if ($key_control == $check) {
-        if(isset($_POST['cnp'])){
-            echo 'valid';
-        }
         return true;
     } else {
-        if(isset($_POST['cnp'])){
-            echo 'invalid';
-        }
         return false;
     }
 }
