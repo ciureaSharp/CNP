@@ -146,7 +146,7 @@ include_once('functions.php')
                                 url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
                                 data: {
                                     action: 'get_cnp_info',
-                                    cnp: cnp
+                                    cnp: manual_input
                                 },
                                 type: 'post',
                                 success: function (data) {
@@ -159,7 +159,7 @@ include_once('functions.php')
                                         url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
                                         data: {
                                             action: 'add_user_data',
-                                            cnp: cnp,
+                                            cnp: manual_input,
                                             sex: sex,
                                             data_nasterii: data_nasterii,
                                             varsta: varsta,
