@@ -1,16 +1,17 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: ciure
+ * User: ciurea
  * Date: 4/24/2017
  * Time: 18:35
  */
-
+// Chemam dinamic din ajax diferite functii (numele functiei in POST['action'])
 include_once("functions.php");
 if (isset($_POST['action']) && !empty($_POST['action'])) {
     $function = $_POST['action'];
     return $function();
 }
+
 function add_user_data()
 {
     global $conn;
@@ -96,17 +97,17 @@ function get_cnp_info()
     // data nasterii
     $data_nasterii = $zi . '-' . $luna . '-' . $anfull;
 
-    // validate date
+    // Validam data si CNP ul
     if (!checkdate($luna, $zi, $anfull) || !validare($cnp)) {
-        return "CNP invalid";
+        echo "CNP invalid";
+        exit;
     }
 
-    setlocale(LC_TIME, 'ro_RO');
     $data_nasterii = date('Y-F-d', strtotime($data_nasterii));
 
-    $date1 = date_create(date('Y-m-d', time()));
-    $date2 = date_create(date('Y-m-d', strtotime($data_nasterii)));
-    $varsta = date_diff($date1, $date2)->y;
+    $acum = date_create(date('Y-m-d', time()));
+    $bday = date_create(date('Y-m-d', strtotime($data_nasterii)));
+    $varsta = date_diff($acum, $bday)->y;
 
     // stocare coduri pentru judete
     $jud = array(
