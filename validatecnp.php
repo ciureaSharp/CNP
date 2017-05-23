@@ -175,12 +175,12 @@ function validare($cnp = '')
     }
     if ($key_control == $check) {
         if(isset($_POST['cnp'])){
-            echo true;
+            echo 'valid';
         }
         return true;
     } else {
         if(isset($_POST['cnp'])){
-            echo false;
+            echo 'invalid';
         }
         return false;
     }
