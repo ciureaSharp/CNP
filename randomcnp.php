@@ -14,7 +14,7 @@ $human_date = date('Ymd', $unix_date); //$unix date transformat in data cu forma
 
 $century = $human_date[0] . $human_date[1]; //primele 2 cifre din an
 
-switch ($century) { //stabilim sexul in functie de anul nasterii
+switch ($century) { //alocam random sexul in functie de anul nasterii
     case 19:
         $sex = $unix_date = mt_rand(1, 2);
         break;
@@ -56,18 +56,18 @@ $jud = array(
 
 $judet = array_rand($jud); //luam un cod de judet random
 $nnn = str_pad(mt_rand(001, 999), 3, '0', STR_PAD_LEFT); //whatever, go to wiki
-$cnp_neverificat = $sex_data . $judet . $nnn; //concatenam smecheriile
+$cnp_neverificat = $sex_data . $judet . $nnn; //concatenam magia
 
 $key = str_split(279146358279);
 
 $cnp_array = array();
-
+// Iteram primele 12 caractere din cheie si cnp ul neverificat si le inmultim intre ele; produsul este introdus in array ul initializat la aceeasi pozitie
 for ($i = 0; $i <= 11; $i++) {
     $cnp_array[$i] = $key[$i] * $cnp_neverificat[$i];
 }
-
+// Adunam valorile din cnp_array si calculam modul 11
 $check_rezult = array_sum($cnp_array) % 11;
-
+// Stabilim ultima cifra din CNP conform algoritmului
 if ($check_rezult < 10) {
     $check = $check_rezult;
 } elseif ($check_rezult == 10) {
