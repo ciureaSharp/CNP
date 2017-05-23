@@ -174,8 +174,14 @@ function validare($cnp = '')
         $check = 1;
     }
     if ($key_control == $check) {
+        if(isset($_POST['cnp'])){
+            echo true;
+        }
         return true;
     } else {
+        if(isset($_POST['cnp'])){
+            echo false;
+        }
         return false;
     }
 }
