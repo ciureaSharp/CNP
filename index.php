@@ -132,6 +132,29 @@ include_once('functions.php')
             var manual_input = $('#manual_input').val();
             if (manual_input.length != 13 || !$.isNumeric(manual_input)) {
                 alert('Format incorect, reincearca!');
+            }else {
+                $.ajax({
+                    url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
+                    data: {
+                        action: 'validare',
+                        cnp: manual_input
+                    },
+                    type: 'post',
+                    success: function (data) {
+                        if (data) {
+                            $("#main_result").removeClass('alert-success');
+                            $("#main_result").addClass('alert-info');
+                            $("#main_result_text").text("Inserat cu succes");
+                            window.setTimeout(function () {
+                                location.reload();
+                            }, 2000);
+                        } else {
+                            $("#main_result").removeClass('alert-success');
+                            $("#main_result").addClass('alert-danger');
+                            $("#main_result_text").text(data);
+                        }
+                    }
+                });
             }
         });
         $('#btn_manual_close').click(function (e) {

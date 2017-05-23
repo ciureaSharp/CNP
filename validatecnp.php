@@ -6,7 +6,7 @@
  * Time: 18:35
  */
 
-include_once ("functions.php");
+include_once("functions.php");
 if (isset($_POST['action']) && !empty($_POST['action'])) {
     $function = $_POST['action'];
     return $function();
@@ -153,9 +153,11 @@ function get_cnp_info()
 
 }
 
-function validare($cnp)
+function validare($cnp = '')
 {
-
+    if ($cnp = '') {
+        $cnp = $_POST['cnp'];
+    }
     $cnp = (string)$cnp;
     $key = str_split(279146358279);
     $key_control = $cnp[12];
