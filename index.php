@@ -136,24 +136,23 @@ include_once('functions.php')
                 $.ajax({
                     url: '//devlaboratory.digitaladvisors.ro/clients/24d58832a062cf808dcebc196b5b1b98/cnp_app/validatecnp.php',
                     data: {
-                        action: 'validare',
+                        action: 'validare_manual_input',
                         cnp: manual_input
                     },
                     type: 'post',
                     success: function (data) {
-                        alert(data);
-//                        if (data == 1) {
-//                            $("#main_result").removeClass('alert-success');
-//                            $("#main_result").addClass('alert-info');
-//                            $("#main_result_text").text("Inserat cu succes");
-//                            window.setTimeout(function () {
-//                                location.reload();
-//                            }, 2000);
-//                        } else {
-//                            $("#main_result").removeClass('alert-success');
-//                            $("#main_result").addClass('alert-danger');
-//                            $("#main_result_text").text(data);
-//                        }
+                        if (data == 1) {
+                            $("#main_result").removeClass('alert-success');
+                            $("#main_result").addClass('alert-info');
+                            $("#main_result_text").text("Inserat cu succes");
+                            window.setTimeout(function () {
+                                location.reload();
+                            }, 2000);
+                        } else {
+                            $("#main_result").removeClass('alert-success');
+                            $("#main_result").addClass('alert-danger');
+                            $("#main_result_text").text(data);
+                        }
                     }
                 });
             }

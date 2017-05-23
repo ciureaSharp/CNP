@@ -153,12 +153,8 @@ function get_cnp_info()
 
 }
 
-function validare($cnp = '')
+function validare($cnp)
 {
-    if ($cnp = '') {
-        $cnp = $_POST['cnp'];
-    }
-    echo $_POST['cnp'];die();
     $cnp = (string)$cnp;
     $key = str_split(279146358279);
     $key_control = $cnp[12];
@@ -178,6 +174,30 @@ function validare($cnp = '')
         return true;
     } else {
         return false;
+    }
+}
+
+function validare_manual_input()
+{
+    $cnp = $_POST['cnp'];
+    $key = str_split(279146358279);
+    $key_control = $cnp[12];
+
+    $cnp_array = array();
+
+    for ($i = 0; $i <= 11; $i++) {
+        $cnp_array[$i] = $key[$i] * $cnp[$i];
+    }
+    $check = array_sum($cnp_array) % 11;
+    if ($check < 10) {
+        $check = $check;
+    } elseif ($check == 10) {
+        $check = 1;
+    }
+    if ($key_control == $check) {
+        echo 1;
+    } else {
+        echo 0;
     }
 }
 
