@@ -123,6 +123,7 @@ include_once('functions.php')
 
 <script>
     $(document).ready(function () {
+        $("input[name='user_id']:checkbox").prop('checked',false);
         var ids;
 
 
