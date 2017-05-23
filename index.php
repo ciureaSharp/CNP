@@ -123,24 +123,10 @@ include_once('functions.php')
 
 <script>
     var ids;
-    $('#manual_input').change(function () {
-        var inputCNP = $('#manual_input').val();
-        $.ajax({
-            beforesubmit: function (inputCNP) {
-                if ($.isNumeric(inputCNP)) {
-                    alert('alea');
-                } else {
-                    alert('celelalte');
-                }
-            },
-            success: function (data) {
-                alert('ailante');
-            }
-        });
-    });
+
 
     $('#btn_manual_input').click(function (e) {
-        //   alert($('#manual_input').val());
+          alert($('#manual_input').val());
     });
 
     $('#btn_confirma_stergere').click(function (e) {
