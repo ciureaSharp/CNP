@@ -141,7 +141,7 @@ include_once('functions.php')
                     },
                     type: 'post',
                     success: function (data) {
-                        if (data == true) {
+                        if (data == 1) {
                             $("#main_result").removeClass('alert-success');
                             $("#main_result").addClass('alert-info');
                             $("#main_result_text").text("Inserat cu succes");
